@@ -1,0 +1,12 @@
+location: world:-84,300:60,286:100,571
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&eРыбалка'
+    height: 0.3
+  actions: {}

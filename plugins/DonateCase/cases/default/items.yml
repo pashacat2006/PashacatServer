@@ -1,0 +1,52 @@
+config: # Please do not touch this section
+  version: 1
+  type: case_items
+
+# Check our detailed documentation about this file - https://jodexx.github.io/JodexIndustriesWiki/DonateCase/Configs/Cases/prizes
+
+items:
+  killer:
+    group: killer
+    chance: 70
+    material:
+      id: RED_WOOL # see: https://jodexx.github.io/JodexIndustriesWiki/DonateCase/materials
+      display-name: '◒'
+      enchanted: false
+    index: 0
+    give-type: ONE
+    actions:
+      - '[command] lp user %player% parent set %group%'
+      - '[title] &aПоздравляем!;&5Вы выиграли &f%groupdisplayname%'
+      - '[broadcast] &a>&c>&e> &c%player% &6выиграл донат &f%groupdisplayname% &6из кейса %casedisplayname%'
+    alternative-actions: # is performed if the group is lower in rank than the player's group in level-groups
+      - "[message] &cИзвините, %player%, но ваша группа уже выше выигранной :("
+  cobra:
+    group: cobra
+    chance: 30
+    material:
+      id: LIME_WOOL # see: https://jodexx.github.io/JodexIndustriesWiki/DonateCase/materials
+      display-name: '⊗'
+      enchanted: true
+    index: 1
+    give-type: ONE
+    actions:
+      - '[command] lp user %player% parent set %group%'
+      - '[title] &aПоздравляем!;&5Вы выиграли &f%groupdisplayname%'
+      - '[broadcast] &a>&c>&e> &c%player% &6выиграл донат &f%groupdisplayname% &6из кейса %casedisplayname%'
+    alternative-actions:
+      - "[message] &cИзвините, %player%, но ваша группа уже выше выигранной :("
+  points:
+    group: 50
+    chance: 30
+    material:
+      id: YELLOW_WOOL # see: https://jodexx.github.io/JodexIndustriesWiki/DonateCase/materials
+      display-name: '50 Сот'
+      enchanted: true
+    index: 1
+    give-type: ONE
+    actions:
+      - '[command] points give %player% %group%'
+      - '[title] &aПоздравляем!;&5Вы выиграли &f%groupdisplayname%'
+      - '[broadcast] &a>&c>&e> &c%player% &6выиграл привелегию &f%groupdisplayname% &6из кейса %casedisplayname%'
+    alternative-actions:
+      - "[message] &cИзвините, %player%, но ваша группа уже выше выигранной :("

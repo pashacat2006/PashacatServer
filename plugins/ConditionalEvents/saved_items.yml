@@ -1,0 +1,79 @@
+items:
+  fish_1:
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: SALMON
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"Уклейка","italic":false}'
+      lore:
+      - '{"text":"20$","italic":false}'
+      - '{"text":"просто рыбка","italic":false}'
+      PublicBukkitValues:
+        executableitems:ei-id: fish_1
+  fish_2:
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: COD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"Карась","color":"white","italic":false}'
+      lore:
+      - '{"text":"30$","color":"gray","italic":false}'
+      - '{"text":"Обычная рыба","color":"gray","italic":false}'
+      PublicBukkitValues:
+        executableitems:ei-id: fish_2
+  fish_3:
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: SALMON
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"Щука","color":"green","italic":false}'
+      lore:
+      - '{"text":"60$","color":"gray","italic":false}'
+      - '{"text":"Необычная рыба","color":"green","italic":false}'
+      PublicBukkitValues:
+        executableitems:ei-id: fish_3
+  fish_4:
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: TROPICAL_FISH
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"Золотая рыбка","color":"gold","italic":false}'
+      lore:
+      - '{"text":"150$","color":"gray","italic":false}'
+      - '{"text":"Редкая рыба","color":"gold","italic":false}'
+      PublicBukkitValues:
+        executableitems:ei-id: fish_4
+  fish_5:
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: PUFFERFISH
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"Королевский иглобрюх","color":"light_purple","bold":true,"italic":false}'
+      lore:
+      - '{"text":"500$","color":"gray","italic":false}'
+      - '{"text":"Легендарная рыба","color":"light_purple","bold":true,"italic":false}'
+      PublicBukkitValues:
+        executableitems:ei-id: fish_5
+  fish_6:
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: TROPICAL_FISH
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"Судак","color":"gold","italic":false}'
+      lore:
+      - '{"text":"200$","color":"gray","italic":false}'
+      - '{"text":"Редкая рыба","color":"gold","italic":false}'
+      PublicBukkitValues:
+        executableitems:ei-id: fish_6

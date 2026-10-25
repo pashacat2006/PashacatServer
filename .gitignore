@@ -1,0 +1,60 @@
+# Миры (в них инвентари и позиции игроков)
+/world/
+/world_nether/
+/world_the_end/
+
+# Ядро и библиотеки, которые Folia скачивает сама
+/server.jar
+/cache/
+/libraries/
+/versions/
+/logs/
+crash-reports/
+
+# Игроки: ники, UUID, IP, баны
+/usercache.json
+/ops.json
+/whitelist.json
+/banned-ips.json
+/banned-players.json
+
+# Базы данных любых форматов
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+*.h2.db
+*.mv.db
+*.trace.db
+*.sqlite
+*.sqlite3
+*.lck
+*.lock
+
+# Скачанные библиотеки и кэш плагинов
+/plugins/**/.paper-remapped/
+/plugins/**/libraries/
+/plugins/*/libs/
+/plugins/*/cache/
+/plugins/*/tmp/
+/plugins/*/backups/
+/plugins/*/logs/
+/plugins/bStats/
+
+# Данные игроков в плагинах
+/plugins/Essentials/userdata/
+/plugins/Essentials/usermap.csv
+/plugins/MythicMobs/data/players/
+/plugins/SkinsRestorer/players/
+/plugins/ConditionalEvents/players/
+/plugins/MyCommand/playerdata/
+/plugins/BetterRTP/data/
+/plugins/Leaderboards/data.yml
+/plugins/Vanishpp/data.yml
+/plugins/Vanishpp/history.yml
+/plugins/Vanishpp/permissions.yml
+/plugins/WorldGuard/worlds/*/regions.yml
+
+# Системное
+Thumbs.db
+desktop.ini

@@ -1,0 +1,253 @@
+Mines:
+  Reset:
+    Starting: '&fШахта &e%mine% &fсбрасывается.'
+    Percentage: '&6Внимание! &fЭта шахта скоро будет сброшена.'
+    Announcement: '&fШахта &9%mine% &aобновлена!'
+    Warning: '&7[&6Внимание&7] &fШахта %mine% &fобновится через &b%time% &9сек.'
+  Teleport: '&fВы телепортированы в шахту &9%mine%'
+  Teleport-Set: '&fТочка телепорта &aустановлена &fдля шахты %mine%'
+  Countdown-Set: '&fТаймер шахты %mine% &aустановлен &fна &b%time% &fсек.'
+  Countdown-Set-Unsuccessful: '&cНе удалось установить таймер для шахты %mine%. Неверное время, или шахта не сбрасывается по времени.'
+  No-Teleport-Location: '&fУ этой шахты &cнет точки телепорта.'
+  Break-Actions:
+    Give-Money: '&fВы получили &b%money% монет &fза этот блок! &eВам повезло!'
+    Drop-Item: '&fИз блока выпал предмет! &eВам повезло!'
+    Give-Item: '&fЗа этот блок вам в инвентарь добавлен предмет! &eВам повезло!'
+    Input:
+      Command: 'Напишите в чат команду, которая выполнится при ломании блока:'
+      Amount: 'Напишите в чат количество:'
+      Amount-Error: '&cЭто не число.'
+      Chance: 'Напишите в чат шанс срабатывания (0-100%):'
+GUI:
+  Reset-Name: '&cСброс'
+  Faces-Name: '&rГрани'
+  Choose-Name: '&rТип шахты: %mine%'
+  Select-Icon-Name: '&rИконка шахты %mine%'
+  Pick-New-Block-Name: '&rВыберите блок'
+  Mine-Blocks-Name: '&rБлоки шахты %mine%'
+  Color-Picker-Name: '&rВыберите цвет'
+  Faces:
+    Name: '&3&l%face%'
+    Selected-Description:
+    - '&7Выбранный блок: &f%material%'
+    - '&7Нажмите &fQ &7чтобы &cудалить.'
+    None-Description:
+    - '&7Выбранный блок: &fнет'
+    - '&7Нажмите &fQ &7чтобы &cудалить.'
+  Resets:
+    Percentage-On:
+      Name: '&9Сброс по проценту &7(&a&lВКЛ&r&7)'
+      Description:
+      - '&7ЛКМ — &cвыключить'
+      - '&fПКМ — ввести новый процент.'
+      - '&fСейчас: &b%value%%'
+    Percentage-Off:
+      Name: '&9Сброс по проценту &7(&c&lВЫКЛ&r&7)'
+      Description:
+      - '&7ЛКМ — &aвключить'
+      - '&fПКМ — ввести новый процент.'
+      - '&fСейчас: &b%value%%'
+    Time-On:
+      Name: '&9Сброс по времени &7(&a&lВКЛ&r&7)'
+      Description:
+      - '&7ЛКМ — &cвыключить'
+      - '&fПКМ — ввести новое время.'
+      - '&fСейчас: &b%value% сек.'
+    Time-Off:
+      Name: '&9Сброс по времени &7(&c&lВЫКЛ&r&7)'
+      Description:
+      - '&7ЛКМ — &aвключить'
+      - '&fПКМ — ввести новое время.'
+      - '&fСейчас: &b%value% сек.'
+  Items:
+    Schematic:
+      Name: '&b&lСхематика'
+    Farm:
+      Name: '&a&lФерма'
+    Blocks:
+      Name: '&9&lБлоки'
+      Description:
+      - '&fНажмите, чтобы открыть.'
+    Faces:
+      Name: '&a&lГрани'
+      Description:
+      - '&fНажмите, чтобы настроить грани шахты.'
+    Resets:
+      Name: '&6&lСбросы'
+      Description:
+      - '&fНажмите, чтобы настроить сбросы.'
+    Teleport:
+      Name: '&5&lТелепорт'
+      Description:
+      - '&fНажмите, чтобы телепортироваться в шахту.'
+    Icon:
+      Name: '&b&lИконка'
+      Description:
+      - '&fНажмите, чтобы выбрать новую иконку.'
+    Name:
+      Name: '&f&lНазвание'
+      Description:
+      - '&fНажмите, чтобы ввести новое название.'
+    Displayname:
+      Name: '&a&lОтображаемое имя'
+      Description:
+      - '&fНажмите, чтобы ввести новое отображаемое имя.'
+    Clear:
+      Name: '&c&lОчистить'
+      Description:
+      - '&fНажмите, чтобы очистить шахту.'
+    Reset:
+      Name: '&4&lСбросить'
+      Description:
+      - '&fНажмите, чтобы сбросить шахту.'
+    Boundaries:
+      Name: '&e&lГраницы'
+      Description:
+      - '&fНажмите, чтобы увидеть границы шахты.'
+    MineColor:
+      Name: '&3&lЦвет'
+      Description:
+      - '&fНажмите, чтобы выбрать цвет шахты.'
+    Add:
+      Name: '&b&lДобавить блок'
+      Description:
+      - '&fНажмите, чтобы добавить новый блок.'
+      - '&fМожно и просто &bнажать &fна блок в своём инвентаре!'
+    Search:
+      Name: '&9&lПоиск'
+      Description:
+      - '&fНажмите, чтобы найти блок.'
+    Next:
+      Name: '&a&lДалее'
+      Description:
+      - '&fСледующая страница.'
+    Back:
+      Name: '&6&lНазад'
+      Description:
+      - '&fПредыдущая страница.'
+    Go-Back:
+      Name: '&9Вернуться'
+      Description:
+      - '&7Нажмите, чтобы вернуться.'
+    Close:
+      Name: '&c&lЗакрыть'
+      Description:
+      - '&fНажмите, чтобы закрыть.'
+    Mine-Block:
+      Block:
+        Name: '&3&l%material%'
+        Description:
+        - '&fПроцент: &b%percentage%%'
+        - '&6'
+        - '&a&nЛКМ&r&f — изменить процент.'
+        - '&e&nПКМ&r&f — действия при ломании блока.'
+        - '&e&nShift+ЛКМ&r&f — вкл/выкл выпадение блока.'
+        - '&e&nShift+ПКМ&r&f — вкл/выкл ломание блока.'
+        - '&c&nQ&r&f — убрать блок.'
+      Schematic-Block:
+        Name: '&3&l%material%'
+        Description:
+        - '&6'
+        - '&e&nПКМ&r&f — действия при ломании блока.'
+        - '&e&nShift+ЛКМ&r&f — вкл/выкл выпадение блока.'
+        - '&e&nShift+ПКМ&r&f — вкл/выкл ломание блока.'
+    Farm-Item:
+      Name: '&3&l%material% &r&7- &fВозраст: &3%age%'
+      Description:
+      - '&fПроцент: &b%percentage%%'
+      - '&6'
+      - '&a&nЛКМ&r&f — изменить процент.'
+      - '&e&nПКМ&r&f — действия при ломании.'
+      - '&a&nShift+ЛКМ&r&f — увеличить возраст.'
+      - '&e&nShift+ПКМ&r&f — уменьшить возраст.'
+      - '&c&nQ&r&f — убрать блок.'
+    No-Blocks:
+      Name: '&f&lЗдесь пока нет блоков!'
+      Description:
+      - '&fНажмите на иконку сверху, чтобы добавить блок!'
+    Mine:
+      Description:
+      - '&fОсталось блоков: &3%remainingblocks%&7/&b%totalblocks%'
+      - '&f%bar%'
+      - '&a&nНажмите&r&f, чтобы настроить шахту.'
+      - '&c&nQ&r&f — удалить шахту'
+    No-Mines-Found:
+      Name: '&9&lШахт пока нет'
+      Description:
+      - '&fСоздайте шахту командой'
+      - '&f/rm create <название>.'
+    Pick:
+      Name: '&3&l%material%'
+      Description:
+      - '&fНажмите, чтобы выбрать.'
+    Colors:
+      Red: '&c&lКРАСНЫЙ'
+      Green: '&2&lЗЕЛЁНЫЙ'
+      Blue: '&9&lСИНИЙ'
+      Brown: '&4&lКОРИЧНЕВЫЙ'
+      Gray: '&7&lСЕРЫЙ'
+      White: '&f&lБЕЛЫЙ'
+      Orange: '&6&lОРАНЖЕВЫЙ'
+      Yellow: '&e&lЖЁЛТЫЙ'
+      Purple: '&d&lФИОЛЕТОВЫЙ'
+      Description:
+      - '&fНажмите, чтобы выбрать этот цвет шахты.'
+System:
+  Player-Only: '&cЭту команду можно выполнить только в игре.'
+  Boundaries-Not-Set: '&fГраницы шахты &cне выделены.'
+  Cant-Add-Item: '&fЭтот предмет &cнельзя &fдобавить в шахту.'
+  Mine-Created: '&fШахта &b%mine% &aсоздана.'
+  Reloaded: '&aПерезагружено.'
+  Mine-Task-Created: '&fЗадача шахт &b%task% &fс интервалом &e%delay% &fсоздана.'
+  Mine-Task-Exists: '&cЗадача шахт с таким названием уже есть.'
+  Mine-Exists: '&cШахта с таким названием уже есть.'
+  Mine-Linked: '&fШахта &aпривязана!'
+  Mine-Unlinked: '&fШахта &aотвязана!'
+  Mine-Deleted: '&fШахта удалена.'
+  Mine-Task-Doesnt-Exist: '&cЗадачи шахт с таким названием нет.'
+  Mine-Doesnt-Exist: '&cШахты с таким названием нет.'
+  Mine-Renamed: '&fШахта переименована в &b%name%'
+  Mine-Clear: '&fШахта &aочищена.'
+  Stopped-Mine-Tasks: '&cОстановлены &fвсе задачи шахт.'
+  Started-Mine-Tasks: '&aЗапущены &fвсе задачи шахт.'
+  Remove: '&fВы убрали &b%object%'
+  Region-Updated: '&bГраницы &aобновлены.'
+  Add-Blocks: '&fДобавить эти блоки в шахту? (напишите yes или no)'
+  Block-Count: '&fВсего блоков: &3%count%'
+  Blocks-Added: '&fВ шахту &aдобавлено &fблоков: &b%count%'
+  Silent-Off: '&fШахта %mine% &aснова объявляет сбросы.'
+  Silent-On: '&fШахта %mine% &cбольше не объявляет сбросы.'
+  Update-Found: '&6&lВНИМАНИЕ! &fВышла новая версия RealMines!'
+  Input-Cancelled: '&fВвод отменён.'
+  Error-Occurred: '&cПроизошла ошибка. Сообщите администрации сервера.'
+  Error-Permission: '&fУ вас &cнет прав &fна эту команду!'
+  Error-Break-Permission: '&fУ вас &cнет прав &fломать блоки в этой шахте!'
+  Error-Command: '&cТакой команды нет!'
+  Error-Usage: '&cНеверное использование команды!'
+  Nothing-Found: '&fПо вашему запросу ничего не найдено.'
+  Invalid-Schematic: '&cТакой схематики нет. Вы указали расширение файла? (.schem и т.п.)'
+  Input-Schematic: '&fНапишите в чат имя файла схематики из папки RealMines/schematics (например: schem1.schem)'
+  Input-Parse: '&cВведите процент от 0 до 100.'
+  Input-Limit-Error: '&cНеверный ввод. Введите процент больше 1 и не больше 100'
+  Input-Percentage-Error: '&cВведите процент от 0 до 100.'
+  Input-Percentage-Error-Greater: '&cНеверный ввод. Процент должен быть больше 0.'
+  Input-Percentage-Error-Lower: '&cНеверный ввод. Процент должен быть не больше 100.'
+  Input-Limit-Error-Greater: '&cНеверный ввод. Время должно быть больше 1'
+  Input-Seconds: '&cВведите новое время в секундах.'
+  Percentage-Modified: '&fПроцент изменён на &b%value%'
+  Time-Modified: '&fВремя изменено на &b%value% сек.'
+  No-Converter-Available: '&cДля этого плагина нет конвертера.'
+  Mine-Freeze: '%name% &r&f заморожена: '
+  # Title and subtitle
+  Type-Input:
+  - '&l&9Напишите ответ в чат'
+  - '&fНапишите &4cancel&f, чтобы отменить'
+Signs:
+  # Split lines with |
+  Setting-Not-Found: '&4Настройка|&4не|&4найдена'
+  Mine-Not-Found: '&4Шахта|&4не|&4найдена'
+  Mined-On: добыто в
+  Mined-Blocks-On: добыто блоков в
+  Blocks-On: блоков в
+  Left-On: осталось в
+Version: '8'

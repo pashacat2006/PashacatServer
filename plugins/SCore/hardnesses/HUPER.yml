@@ -1,0 +1,14 @@
+# Если событие включено
+enabled: false
+detailedBlocks:
+  # Блоки
+  blocks: []
+  # Отменить событие если блок недействителен?
+  cancelEventIfNotValid: false
+period: 3
+periodInTicks: false
+detailedItems:
+  # Предметы
+  items: []
+  # Отменить событие если блок недействителен?
+  cancelEventIfNotValid: false

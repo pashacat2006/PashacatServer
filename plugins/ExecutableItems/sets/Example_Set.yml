@@ -1,0 +1,30 @@
+# ExecutableItems set: bonuses by number of pieces worn. One file per set, the file name is the set id.
+# Reload with /ei reload. List the sets and what a player wears: /ei sets [player]
+# Placeholders (PlaceholderAPI): %executableitems_set_<id>% = pieces worn, %executableitems_set_<id>_tier% = highest active tier (0 = none)
+# In the commands below: %set_id% %set_name% %set_pieces% %set_max_pieces% %set_tier% + the usual player placeholders
+enabled: false            # set to true to use this example (the pieces must exist)
+name: '&bSpeedy set'
+silenceOutput: true       # hide the console feedback of the commands
+pieces:                   # ExecutableItems ids. By default a piece counts in the armor slots
+  - Prem_Speedy_01_v1_20_5
+  - Prem_Speedy_02_v1_20_5
+  - Prem_Speedy_03_v1_20_5
+  - item: Prem_Speedy_04_v1_20_5
+    slots: [FEET]         # optional: HEAD, CHEST, LEGS, FEET, OFFHAND, MAINHAND
+tiers:                    # tiers add up: with 4 pieces, the tiers 2 and 4 are active
+  2:
+    potionEffects:        # TYPE[:amplifier[:particles]]  kept while the tier holds, removed after
+      - SPEED:0
+    enterCommands:        # when the tier is reached by putting a piece on (not on join / reload)
+      - 'SENDMESSAGE &b%set_name% &7(%set_pieces%/%set_max_pieces%): &fSpeed I'
+    leaveCommands:        # when it is lost by taking a piece off
+      - 'SENDMESSAGE &7%set_name%: bonus lost'
+  4:
+    potionEffects:
+      - SPEED:1           # the strongest level of a type wins
+      - JUMP_BOOST:0
+    attributes:           # ATTRIBUTE:amount[:ADD_NUMBER|ADD_SCALAR|MULTIPLY_SCALAR_1]
+      - 'MAX_HEALTH:4'
+    loopCommands:         # every loopDelay ticks while the tier holds
+      - 'PARTICLE particle:CLOUD quantity:5 offset:0.3 speed:0.01'
+    loopDelay: 40

@@ -1,0 +1,18 @@
+newBalanceMsg: '&6&l[SCore] &eTransaction: &c-%amount%$ &eNouveau solde: &a%balance%$'
+newBalancePositiveMsg: '&6&l[SCore] &eTransaction: &a%amount%$ &eNouveau solde: &a%balance%$'
+timeLeft: '&8[&4SCore&8] &cPatientez &e%time% &cavant d''utiliser &6%activator%&c
+  !'
+noPlayerHit: '&cAucun joueur n''a été touché'
+variableValueSet: '&e&l[SCore] &aValeur définie !'
+noEntityHit: '&cAucune entité n''a été touchée'
+actionbarEnd: '&c&lDÉSACTIVATION DE &e&l%item%'
+haveActionbarOn: '&aTa barre d''action est déjà &a&lON'
+errorMoneyMsg: '&4&l[SCore] &cTu n''as pas: &6%amount%$ &csur ton compte ! &6(&eActuellement:
+  &a%balance%$&6)'
+damageCommandKill: '&8%target% &7est mort par une commande de dégâts'
+setActionbarOn: '&aTa barre d''action est désormais &a&lON'
+haveActionbarOff: '&cTa barre d''action est déjà &4&lOFF'
+shapeExecuted: '&2[SCore] &aForme exécutée !'
+variableDefaultValueSet: '&e&l[SCore] &aValeur par défaut définie !'
+setActionbarOff: '&cTa barre d''action est désormais &4&lOFF'
+actionbarMessage: '&a&lTemps restant pour &e&l%item% &a&l: &e&l%time%'

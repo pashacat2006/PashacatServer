@@ -1,0 +1,232 @@
+#  ___       ___  __  ___  __        ___
+# |__  |    |__  /  `  |  /  \ |\ | |__
+# |    |___ |___ \__,  |  \__/ | \| |___
+#  __             __   ___
+# |__) |  | |    /__` |__
+# |    \__/ |___ .__/ |___   /\
+#                           /  \
+# __/\___  ____/\_____  ___/    \______
+#        \/           \/
+#
+# Don't change it if you don't know what it is
+server: "7d45eb73-673c-40af-a939-6d0d5fb6fe70"
+version: "1.14.1"
+# https://flectone.net/pulse/docs/config/language
+language:
+  type: "en_us"
+  by_player: true
+# https://flectone.net/pulse/docs/config/database
+database:
+  use_playtime_tracking: true
+  type: "H2"
+  name: "flectonepulse"
+  host: "127.0.0.1"
+  port: "3306"
+  user: "root"
+  password: ''
+  parameters: "?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8"
+  prefix: ""
+  pool_settings:
+    max_size: 10
+    min_idle: 10
+    max_lifetime: 1800000
+    keepalive_time: 0
+    connection_timeout: 5000
+# https://flectone.net/pulse/docs/config/executor
+executor:
+  min_pool_size: 8
+  max_pool_size: 8
+  allow_core_thread_timeout: false
+  work_queue: "LINKED_BLOCKING"
+  keep_alive:
+    duration: 60
+    time_unit: "SECONDS"
+  shutdown_timeout:
+    duration: 5
+    time_unit: "SECONDS"
+  stall_timeout:
+    duration: 30
+    time_unit: "SECONDS"
+# https://flectone.net/pulse/docs/config/proxy
+proxy:
+  clusters: []
+  bungeecord: false
+  velocity: false
+  redis:
+    enable: false
+    host: "127.0.0.1"
+    port: 6379
+    ssl: false
+    user: ""
+    password: ''
+# https://flectone.net/pulse/docs/config/internal
+internal:
+  enable: true
+  always_send_silent_packet: false
+  use_vanilla_message_sender: false
+  use_packet_login_listener: false
+  unregister_command_on_reload: false
+  vanilla_commands_to_remove:
+  - "msg"
+  - "banlist"
+  - "kick"
+  - "w"
+  - "tell"
+  - "me"
+  - "pardon"
+  - "whitelist"
+  - "ban"
+# https://flectone.net/pulse/docs/config/logger
+logger:
+  console: "Console"
+  prefix: "(FlectonePulse) "
+  description:
+  - " ___       ___  __  ___  __        ___"
+  - "|__  |    |__  /  `  |  /  \\ |\\ | |__"
+  - "|    |___ |___ \\__,  |  \\__/ | \\| |___"
+  - " __             __   ___"
+  - "|__) |  | |    /__` |__ "
+  - "|    \\__/ |___ .__/ |___   /\\"
+  - "                          /  \\ v<version>"
+  - "__/\\___  ____/\\_____  ___/    \\______"
+  - "       \\/           \\/"
+  primary: "\e[38;2;77;166;255m"
+  warn: "\e[33m"
+  info: "\e[38;2;166;216;255m"
+  filter:
+  - "Paper Async Command Builder"
+  - "Caught previously unhandled exception :"
+  - "Error received from Telegram GetUpdates Request"
+  - "OkHttp TaskRunner"
+  - "Exception in thread \"ForkJoinPool"
+  - "FlectonePulseDatabase - "
+# https://flectone.net/pulse/docs/config/cache
+cache:
+  types:
+    ANIMATION:
+      invalidate_on_reload: true
+      expire_after_write: false
+      duration: 1
+      time_unit: "MINUTES"
+      size: 100000
+    COOLDOWN:
+      invalidate_on_reload: false
+      expire_after_write: false
+      duration: 5
+      time_unit: "HOURS"
+      size: 5000
+    DIALOG_CLICK:
+      invalidate_on_reload: false
+      expire_after_write: true
+      duration: 1
+      time_unit: "SECONDS"
+      size: 100
+    OFFLINE_PLAYERS:
+      invalidate_on_reload: false
+      expire_after_write: false
+      duration: 1
+      time_unit: "HOURS"
+      size: 1000
+    MESSAGE_CONTEXT:
+      invalidate_on_reload: true
+      expire_after_write: true
+      duration: 1
+      time_unit: "SECONDS"
+      size: 10000
+    MODERATION:
+      invalidate_on_reload: false
+      expire_after_write: false
+      duration: 1
+      time_unit: "HOURS"
+      size: 5000
+    EXTERNAL_MODERATION:
+      invalidate_on_reload: true
+      expire_after_write: true
+      duration: 5
+      time_unit: "SECONDS"
+      size: 5000
+    ICU_MESSAGE:
+      invalidate_on_reload: false
+      expire_after_write: false
+      duration: 10
+      time_unit: "MINUTES"
+      size: 10000
+    IMAGE_PIXELS:
+      invalidate_on_reload: true
+      expire_after_write: false
+      duration: 10
+      time_unit: "MINUTES"
+      size: 1000
+    LEGACY_COLOR_MESSAGE:
+      invalidate_on_reload: false
+      expire_after_write: false
+      duration: 10
+      time_unit: "MINUTES"
+      size: 10000
+    MENTION_MESSAGE:
+      invalidate_on_reload: false
+      expire_after_write: false
+      duration: 10
+      time_unit: "MINUTES"
+      size: 1000
+    SWEAR_MESSAGE:
+      invalidate_on_reload: false
+      expire_after_write: false
+      duration: 10
+      time_unit: "MINUTES"
+      size: 10000
+    REPLACEMENT_MESSAGE:
+      invalidate_on_reload: false
+      expire_after_write: false
+      duration: 10
+      time_unit: "MINUTES"
+      size: 10000
+    REPLACEMENT_IMAGE:
+      invalidate_on_reload: false
+      expire_after_write: false
+      duration: 10
+      time_unit: "MINUTES"
+      size: 100
+    TRANSLATE_MESSAGE:
+      invalidate_on_reload: false
+      expire_after_write: false
+      duration: 1
+      time_unit: "HOURS"
+      size: 5000
+    PROFILE_PROPERTY:
+      invalidate_on_reload: false
+      expire_after_write: false
+      duration: 1
+      time_unit: "HOURS"
+      size: 1000
+    PLAYTIME:
+      invalidate_on_reload: true
+      expire_after_write: false
+      duration: 10
+      time_unit: "MINUTES"
+      size: 1000
+    PLAYER_COLOR:
+      invalidate_on_reload: true
+      expire_after_write: false
+      duration: 10
+      time_unit: "MINUTES"
+      size: 1000
+    PLAYER_SETTING:
+      invalidate_on_reload: true
+      expire_after_write: false
+      duration: 10
+      time_unit: "MINUTES"
+      size: 1000
+    PLAYER_IGNORE:
+      invalidate_on_reload: true
+      expire_after_write: false
+      duration: 1
+      time_unit: "HOURS"
+      size: 1000
+# Help us improve FlectonePulse! This collects basic, anonymous data like server version and module usage.
+# No personal data, No IPs, No player names.
+# This helps us understand what features matter most and focus development where it's needed.
+# You can see the public stats here: https://flectone.net/pulse/metrics/
+# Thanks for supporting the project! ❤️
+metrics:
+  enable: true

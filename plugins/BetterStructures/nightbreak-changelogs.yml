@@ -1,0 +1,23 @@
+trackingSinceVersion: 2.7.9
+lastObservedVersion: 2.7.9
+cache:
+  plugin:
+    targetVersion: 2.7.9
+    releases:
+    - version: 2.7.9
+      changelog: |-
+        BetterStructures 2.7.9:
+        - [Fix] Modular dungeons generate naturally again as players explore. Since 2.7.1 almost all of them were skipped; now only spawn protection or a WorldGuard region over the dungeon's area stops one.
+        - [Fix] Areas pregenerated with /bs pregenerate or Chunky get structures and dungeons again.
+        - [Fix] On Paper, structure pastes no longer stall in chunks with no player nearby, which blocked every later paste.
+        - [Fix] Treasure files no longer fail to load at startup when another plugin loads at the same time, which left barrels empty.
+        - [Fix] Dyed shulker boxes now get loot like plain shulker boxes.
+        - [Tweak] /bs pregenerate stats now count structures once they finish pasting and show how many are still waiting.
+        - [Tweak] BetterStructures now says clearly when the installed WorldEdit build is what breaks schematic loading, and schematic errors name the installed file.
+        - [Tweak] The setup menu's update buttons now explain restart-free updates, and content that isn't released yet says so instead of failing to download.
+        - [Fix] On Windows, saving a config file that an antivirus or file indexer briefly holds open no longer fails.
+        - [Fix] Content package updates now archive files the new version no longer ships.
+        - [Fix] /nightbreak plugins now installs missing plugins into plugins/, so they load on the next start.
+        - [Fix] Restart-free updates no longer keep the old copy of BetterStructures in memory while a WFC world is open.
+      releasedAt: '2026-10-17T16:18:48.578Z'
+    complete: true

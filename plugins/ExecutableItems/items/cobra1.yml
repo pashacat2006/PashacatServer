@@ -1,0 +1,197 @@
+# Имя или отображаемое имя
+name: меч кобры
+# Описание предмета
+lore:
+- §7
+- Меч кобры
+- Донатный предмет
+# Материал
+material: NETHERITE_SWORD
+# Эффект свечения предмета
+glow: false
+# Отключить эффект скольжения зачарования
+disableEnchantGlide: false
+# Отключить стакирование предметов?
+disableStack: false
+# Сохранять предмет при смерти?
+keepItemOnDeath: false
+# Может использоваться только владельцем
+# ⚠ Требуется Store item info на true
+canBeUsedOnlyByTheOwner: false
+# Отменить событие если не владелец
+cancelEventIfNotOwner: false
+# Черный список активаторов
+# (могут использоваться всеми, даже если
+# функция только для владельца включена)
+onlyOwnerBlackListedActivators: []
+# Хранить информацию о предмете?
+# Хранит такую информацию как владелец
+storeItemInfo: false
+# Предмет неразрушимый?
+unbreakable: false
+# Функция прочности
+# будет игнорироваться, и использование
+# будет использоваться как прочность
+isDurabilityBasedOnUsage: false
+# Отменить событие если у игрока нет прав
+cancelEventIfNoPermission: false
+# Функции разрешенных миров
+whitelistedWorlds: []
+# Сохранять стандартные атрибуты
+# Только для 1.19+
+keepDefaultAttributes: true
+# Для нового предмета ОСТАВЬТЕ FALSE
+# В противном случае можете оставить true
+# Если хотите обновить старые предметы поставьте FALSE
+# Но будьте осторожны, теги предмета могут измениться
+# Это может повлиять на торговцев или рецепты крафта
+# Только для 1.19+
+ignoreKeepDefaultAttributesFeature: false
+config_5: true
+config_update: true
+# Функции использования
+# Увеличьте или уменьшите это значение
+# UsageModification в ваших активаторах
+usageFeatures:
+  # Использование предмета
+  # -1 = Бесконечно
+  # Увеличить или Уменьшить это использование с
+  # UsageModification в ваших активаторах
+  usage: 1
+  # Очищаемое при обновлении
+  isRefreshableClean: true
+  # Лимит использования предмета
+  # Использование не может быть увеличено выше этого значения
+  usageLimit: -1
+# Настройки выпадения
+dropFeatures:
+  # Свечение при выпадении
+  glowDrop: false
+  # Цвет свечения
+  glowDropColor: WHITE
+  # Показывать пользовательское имя над предметом
+  displayNameDrop: false
+# Зачарования предмета
+enchantments:
+  enchantment7:
+    enchantment: Knockback
+    # Уровень зачарования
+    level: 4
+  enchantment8:
+    enchantment: Multishot
+    # Уровень зачарования
+    level: 4
+  enchantment9:
+    enchantment: Power
+    # Уровень зачарования
+    level: 8
+  enchantment11:
+    enchantment: Wind_burst
+    # Уровень зачарования
+    level: 5
+  enchantment10:
+    enchantment: Unbreaking
+    # Уровень зачарования
+    level: 10
+  enchantment0:
+    enchantment: Bane_of_arthropods
+    # Уровень зачарования
+    level: 5
+  enchantment1:
+    enchantment: Blast_protection
+    # Уровень зачарования
+    level: 3
+  enchantment2:
+    enchantment: Channeling
+    # Уровень зачарования
+    level: 2
+  enchantment3:
+    enchantment: Depth_strider
+    # Уровень зачарования
+    level: 2
+  enchantment4:
+    enchantment: Efficiency
+    # Уровень зачарования
+    level: 6
+  enchantment5:
+    enchantment: Fire_aspect
+    # Уровень зачарования
+    level: 5
+  enchantment6:
+    enchantment: Infinity
+    # Уровень зачарования
+    level: 3
+# Функции скрытия
+# Можно скрыть:
+# Атрибуты, Зачарования, ...
+hiders:
+  # Скрыть зачарования
+  hideEnchantments: false
+  # Скрыть неразрушимость
+  hideUnbreakable: false
+  # Скрыть атрибуты
+  hideAttributes: false
+  # Скрыть использование
+  hideUsage: false
+  # Скрыть разрушения
+  hideDestroys: false
+  # Скрыть размещение
+  hidePlacedOn: false
+  # Скрыть краску
+  hideDye: false
+  # Скрыть отделку брони
+  hideArmorTrim: false
+  # Скрыть дополнительную подсказку
+  hideAdditionalTooltip: false
+  # Скрыть подсказку
+  hideToolTip: false
+# Функции выдачи при первом входе
+giveFirstJoinFeatures:
+  # Включить функцию
+  giveFirstJoin: false
+  # Количество для выдачи
+  giveFirstJoinAmount: 1
+  # Слот от 0 до 8 включительно
+  giveFirstJoinSlot: 0
+# Функции ограничений
+restrictions:
+  # Предмет нельзя
+  # переместить из инвентаря
+  locked-in-inventory: false
+# Переменные
+# Используются для хранения данных как убийства/смерти ...
+variables: {}
+# Активаторы / триггеры
+activators: {}
+# Отображать условия в описании
+displayConditions:
+  #
+  playerConditions: {}
+  #
+  worldConditions: {}
+  #
+  itemConditions: {}
+  # Условия плейсхолдеров
+  placeholdersConditions: {}
+  # Включить или отключить эту функцию
+  enableFeature: false
+# Настройки еды
+foodFeatures:
+  # Является ли еда мясом?
+  isMeat: false
+  # Питательность еды
+  nutrition: 1
+  # Насыщение от еды
+  saturation: 1
+  # Может ли игрок всегда есть эту еду?
+  canAlwaysEat: false
+  # Время в секундах для поедания еды
+  eatSeconds: 1
+# Редкость предмета
+itemRarity:
+  # Включить или отключить функцию редкости
+  enableRarity: false
+  # Редкость предмета
+  rarity: COMMON
+# Атрибуты
+attributes: {}

@@ -1,0 +1,301 @@
+# Vanish++ English Language File
+# Supports MiniMessage tags (<red>, <bold>, etc.), legacy color codes (&c, &a, etc.),
+# and PlaceholderAPI %placeholders%.
+
+# --- [ GENERAL ] ---
+no-permission: "&cУ вас нет прав на эту команду."
+player-not-found: "&cИгрок не найден."
+invalid-usage: "&cИспользование: %usage%"
+console-specify: "&cИз консоли нужно указать игрока."
+unknown-command: "&cНеизвестная команда. Напишите \"/help\" для помощи."
+
+# --- [ VANISH COMMANDS ] ---
+vanish:
+  self: "&6Вы теперь невидимы."
+  others: "&6Вы сделали невидимым игрока %player%."
+  unvanish-self: "&6Вы снова видимы."
+  unvanish-others: "&6Игрок %player% снова видим."
+
+# --- [ VPERMS COMMAND ] ---
+vperms:
+  reload: "&aПрава Vanish++ перезагружены."
+  invalid-usage: "&cИспользование: /vperms <игрок> <право> <set|remove|get>"
+  invalid-permission: "&cНеверное право."
+  perm-set: "&aПраво '%perm%' выдано игроку %player%."
+  perm-removed: "&eПраво '%perm%' убрано у игрока %player%."
+  perm-get-has: "&aУ игрока %player% ЕСТЬ право '%perm%'."
+  perm-get-does-not-have: "&cУ игрока %player% НЕТ права '%perm%'."
+
+# --- [ UPDATE CHECKER ] ---
+update:
+  available: "&a&lВышло обновление Vanish++!"
+  current: "&7Сейчас: &c%version%"
+  latest: "&7Новая: &a%version%"
+  download: "&6&l[НАЖМИТЕ, ЧТОБЫ СКАЧАТЬ]"
+  hover: "&eОткрыть версию %version% на Modrinth"
+
+# --- [ RULES COMMAND ] ---
+rules:
+  usage: "&cИспользование: /vrules [игрок] <правило> [true|false] [секунды] &7— без секунд навсегда"
+  invalid-name: "&cТакого правила нет. Список правил: /vrules"
+  invalid-value: "&cЗначение должно быть 'true' или 'false'."
+  invalid-seconds: "&cНеверное число секунд."
+  header: "&6Правила игрока %player%:"
+  line: " • %rule%: <%color%>%status%"
+  status-on: "ВКЛ"
+  status-off: "ВЫКЛ"
+  set: "&aПравило '%rule%' для %player%: %status%."
+  set-temp: "&aПравило '%rule%' для %player%: %status% на %seconds% сек."
+  expired: "&eВременное правило '%rule%' закончилось."
+
+# --- [ CHAT ] ---
+chat:
+  locked: "<red>Вы невидимы! <gray>Нажмите <click:run_command:'/vchat confirm'><aqua><underlined>[Отправить]</underlined></aqua></click><gray>, чтобы отправить это сообщение."
+  sent: "&aСообщение отправлено."
+  no-pending: "&cУ вас нет сообщений, ожидающих отправки."
+  usage: "&7Использование: &b/vchat confirm &7— отправить сообщение, написанное в невидимости."
+
+# --- [ PICKUP ] ---
+pickup:
+  enabled: "&eПодбор предметов &aВКЛЮЧЁН&e."
+  disabled: "&eПодбор предметов &cВЫКЛЮЧЕН&e."
+  blocked-actionbar: "&c✖ Подбор предметов запрещён"
+
+# --- [ WARNINGS & NOTIFICATIONS ] ---
+warnings:
+  protocollib-missing-title: "&c⚠ ВНИМАНИЕ ⚠"
+  protocollib-missing-subtitle: "&eНет ProtocolLib!"
+  box-top: "&4&l█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█"
+  header: "&c&l НЕ ХВАТАЕТ ВАЖНОГО ПЛАГИНА"
+  line: "&e ProtocolLib НЕ установлен."
+  sub: "&c ⚠ ВЫ СКРЫТЫ НЕ ПОЛНОСТЬЮ! ⚠"
+  box-bottom: "&4&l█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█"
+  action-blocked-actionbar: "&c&l✖ Действие запрещено: %action%"
+  vanish-blocked: "&cНевидимость запретила: &e%action%&c. Разрешить: &b/vrules %rule% true"
+  config-blocked: "&cНевидимость запретила: &e%action%&c (настройка: &7%path%&c)."
+  spawn-egg-blocked: "&cЯйца призыва в невидимости всегда запрещены, чтобы вас не раскрыли."
+  throwable-blocked: "&cНевидимость запретила &eбросать предметы&c. Разрешить: &b/vrules can_throw true"
+  ignore-tip: "&7Совет: &b/vrules show_notifications false &7— отключить эти сообщения."
+  setup-header: "&c⚠ Проблемы настройки Vanish++:"
+  invsee-hint-header: "&e&l ⚠ Просмотр инвентаря: ограничен"
+  invsee-hint-line: "&7 Броня, вторая рука и слоты крафта скрыты во встроенном режиме."
+  invsee-hint-sub: "&e Для полного доступа установите поддерживаемый плагин:"
+  invsee-hint-dismissed: "&7Подсказка скрыта."
+
+# --- [ STAFF NOTIFICATIONS ] ---
+staff:
+  silent-join: "&8[&7+&8] &7%player% тихо зашёл."
+  silent-quit: "&8[&7-&8] &7%player% тихо вышел."
+  notify-vanish: "&e[Персонал] %player% стал невидимым (включил %staff%)."
+  notify-unvanish: "&e[Персонал] %player% снова видим (выключил %staff%)."
+
+# --- [ APPEARANCE ] ---
+appearance:
+  action-bar: "&bВы сейчас НЕВИДИМЫ"
+  vanished-player-format: "%prefix%&7%player%: %message%"
+
+# --- [ CONFIG COMMAND ] ---
+config:
+  reloaded: "&aНастройки Vanish++ перезагружены!"
+  updated: "&aНастройка &e%path% &aизменена на &f%value%"
+  invalid-path: "&cТакой настройки нет!"
+  current-value: "&6%path% &7сейчас: &f%value%"
+  usage: "&cИспользование: /vconfig <ключ> [значение]"
+  sensitive-warning: "&c⚠ Внимание: &e%path% &c— важная настройка, её изменение может повлиять на стабильность сервера. Повторите команду с &b--confirm&c, чтобы применить."
+  proxy-mismatch-title: "Настройки прокси не совпадают"
+  proxy-mismatch-line1: "Настройки этого сервера отличаются от настроек прокси Velocity."
+  proxy-mismatch-line2: "Не совпадают:"
+  proxy-mismatch-line3: "Примените их на прокси или скройте это предупреждение."
+  proxy-applied: "&aНа прокси применено настроек: %count%."
+
+# --- [ PLUGIN LIST ] ---
+plugins:
+  hidden-info: "&8Список плагинов отфильтрован (Vanish++ скрыт от игроков)."
+
+# --- [ VANISHED LIST ] ---
+list:
+  no-vanished-online: "&eНевидимых игроков онлайн нет."
+  header: "&6Невидимые игроки (%count%):"
+
+# --- [ ACKNOWLEDGEMENT ] ---
+acknowledgement:
+  acknowledged: "&aУведомление принято."
+  hiding-dismissed: "&7Уведомление скрыто для этой версии."
+  hiding-visible: "&aVanish++ теперь ВИДЕН в списке плагинов."
+
+# --- [ IGNORE WARNING ] ---
+ignore-warning:
+  protocol-denied: "&cНет доступа."
+  player-not-found: "&cИгрок не найден."
+  console-specify: "&cИз консоли нужно указать игрока."
+  enabled: "&aВы снова будете получать предупреждения о ProtocolLib."
+  disabled: "&cВы больше не будете получать предупреждения о ProtocolLib."
+  others-enabled: "&a%player% будет получать предупреждения."
+  others-disabled: "&c%player% не будет получать предупреждения."
+
+# --- [ SPECTATOR MODE ] ---
+spectator:
+  entered: "&bРежим наблюдателя. &7Дважды нажмите Shift, чтобы вернуться."
+  exited: "&aВы вернулись в режим &6%gamemode%&a."
+  forced-unvanish: "&eПри выходе из невидимости вы вернулись в режим &6%gamemode%&e."
+
+# --- [ SILENT CHEST ] ---
+silent-chest:
+  blocked: "&cЭто нельзя открыть тихо (тип не поддерживается или защищён)."
+
+# --- [ TIMED VANISH ] ---
+timed-vanish:
+  expired: "&eВремя вашей невидимости закончилось."
+  set: "&aНевидимость выключится через &e%seconds% сек.&a"
+  invalid-duration: "&cНеверное время. Примеры: &e30s&c, &e5m&c, &e1h&c."
+
+# --- [ RATE LIMIT ] ---
+rate-limit:
+  blocked: "&cВы слишком часто переключаете невидимость. Подождите немного."
+
+# --- [ ANTI-COMBAT VANISH ] ---
+combat:
+  pvp-cooldown: "&cНельзя стать невидимым — вы недавно были в PvP (осталось %seconds% сек.)."
+  pve-cooldown: "&cНельзя стать невидимым — вы недавно сражались с мобами (осталось %seconds% сек.)."
+
+# --- [ VSPEC COMMAND ] ---
+vspec:
+  usage: "&cИспользование: /vspec <игрок|stop>"
+  started: "&bВы наблюдаете за &e%player%&b. Вернуться: &f/vspec stop"
+  stopped: "&aВы вернулись на прежнее место и в прежний режим."
+  not-spectating: "&cВы сейчас ни за кем не наблюдаете."
+
+# --- [ VFOLLOW COMMAND ] ---
+vfollow:
+  usage: "&cИспользование: /vfollow <игрок|stop>"
+  must-be-vanished: "&cДля /vfollow нужно быть невидимым."
+  started: "&bВы следуете за &e%player%&b. Остановить: &f/vfollow stop"
+  stopped: "&aКамера освобождена."
+  not-following: "&cВы сейчас ни за кем не следуете."
+  target-disconnected: "&e%player% вышел. Слежение остановлено."
+
+# --- [ HISTORY COMMAND ] ---
+history:
+  no-entries: "&7Записей в истории нет."
+
+# --- [ AUTO-VANISH ] ---
+auto-vanish:
+  enabled: "&aАвтоневидимость при входе &2ВКЛЮЧЕНА &aдля &e%player%&a."
+  disabled: "&cАвтоневидимость при входе &4ВЫКЛЮЧЕНА &cдля &e%player%&c."
+
+# --- [ STATS COMMAND ] ---
+stats:
+  header: "&6Статистика невидимости &7— &e%player%"
+  total-time: " &7Всего времени: &f%time%"
+  session-count: " &7Сеансов: &f%count%"
+  longest-session: " &7Самый долгий сеанс: &f%time%"
+
+# --- [ AFK ] ---
+afk:
+  auto-vanished: "&7Вы стали невидимым из-за бездействия."
+  unvanished-on-return: "&aС возвращением! Невидимость выключена."
+
+# --- [ WORLDGUARD ] ---
+worldguard:
+  deny-vanish: "&cВ этом регионе нельзя становиться невидимым."
+  deny-unvanish: "&cВ этом регионе нельзя выходить из невидимости."
+  force-vanished: "&7В этом регионе вы автоматически стали невидимым."
+
+# --- [ ZONES ] ---
+zone:
+  usage: "&cИспользование: /vzone <create|delete|list|reload>"
+  create-usage: "&cИспользование: /vzone create <название> [радиус]"
+  delete-usage: "&cИспользование: /vzone delete <название>"
+  created: "&aЗона без невидимости &e%name% &aсоздана, радиус &e%radius% м&a."
+  deleted: "&aЗона &e%name% &aудалена."
+  already-exists: "&cЗона &e%name% &cуже существует."
+  not-found: "&cЗона &e%name% &cне найдена."
+  none: "&7Зон без невидимости нет."
+  list-header: "&6Зоны без невидимости &7(%count%):"
+  list-entry: " &8• &e%name% &7— &f%world% &7(&fX:%x% Z:%z%&7, r=&f%radius% м&7)"
+  reloaded: "&aЗоны перезагружены."
+  forced-unvanish: "&cНевидимость выключена — &e%zone% &cзапрещает невидимость."
+  invalid-radius: "&cРадиус должен быть положительным числом."
+
+# --- [ INCOGNITO ] ---
+incognito:
+  enabled: "&bРежим инкогнито &2ВКЛЮЧЁН &bдля &e%player%&b. Ложный ник: &f%fakename%"
+  disabled: "&bРежим инкогнито &4ВЫКЛЮЧЕН &bдля &e%player%&b."
+  not-active: "&e%player% &7не в режиме инкогнито."
+  invalid-name: "&cЛожный ник должен быть от 1 до 16 символов."
+
+# --- [ WAND ] ---
+wand:
+  given: "&aЖезл невидимости добавлен в ваш инвентарь."
+  disabled: "&cЖезл невидимости на этом сервере выключен."
+
+# --- [ COMMAND FAKE RESPONSES ] ---
+# Shown to non-staff when a command would reveal that a vanished player is online.
+# Default values match vanilla Minecraft/Paper output so they blend in naturally.
+commands:
+  # Shown when a non-seer tries /msg, /tell, /w, /r, etc. targeting a vanished player.
+  msg-player-not-found: "&cИгрок не найден"
+
+# --- [ HELP MENU ] ---
+help:
+  header: "\n&6&l      Помощь Vanish++      "
+  subheader: "&7Нажмите на команду, чтобы узнать подробнее:"
+  footer: "&7-------------------------------"
+  unknown-command: "&cНеизвестная команда '&f%command%&c'. Полный список:"
+  cmd-vanish: "Включить или выключить невидимость."
+  cmd-vrules: "Личные правила невидимости."
+  cmd-vconfig: "Изменить настройки плагина на ходу."
+  cmd-vlist: "Список невидимых игроков."
+  cmd-vperms: "Управление правами плагина."
+  cmd-vignore: "Отключить предупреждения о ProtocolLib."
+  cmd-vchat: "Подтвердить сообщение в чат в невидимости."
+  cmd-vreload: "Перезагрузить настройки плагина."
+
+# --- [ RULE PRESETS ] ---
+rules:
+  preset:
+    usage: "&cИспользование: /vrules preset <save|load|list|delete> [название]"
+    saved: "&aНабор правил &e%name% &aсохранён."
+    loaded: "&aНабор правил &e%name% &aзагружен."
+    deleted: "&aНабор правил &e%name% &aудалён."
+    not-found: "&cНабора правил &e%name% &cнет."
+    none: "&7У вас нет сохранённых наборов правил."
+    list-header: "&6Ваши наборы правил:"
+    list-entry: " &8• &e%name%"
+
+# --- [ BULK VANISH ] ---
+bulk:
+  vanished-all: "&aНевидимыми стали игроков: &e%count%&a."
+  vanished-world: "&aНевидимыми стали игроков: &e%count% &aв мире &f%world%&a."
+
+# --- [ CHANGELOG ] ---
+changelog:
+  header: "\n&6&l  Vanish++ 1.1.8 Changelog  "
+  entries:
+    - " &8• &eNew&7: /vspec quick-spectate command"
+    - " &8• &eNew&7: /vfollow player tracking with HUD"
+    - " &8• &eNew&7: /vhistory audit log"
+    - " &8• &eNew&7: /vautovanish per-player auto-join preference"
+    - " &8• &eNew&7: /vstats vanish time statistics"
+    - " &8• &eNew&7: /vadmin dashboard GUI"
+    - " &8• &eNew&7: /vwand toggle item (blaze rod)"
+    - " &8• &eNew&7: /vzone no-vanish zones"
+    - " &8• &eNew&7: /vincognito fake name mode"
+    - " &8• &eNew&7: LuckPerms context integration"
+    - " &8• &eNew&7: WorldGuard force/deny vanish flags"
+    - " &8• &eNew&7: Webhook support for external integrations"
+    - " &8• &eNew&7: Vanish reason tracking & display"
+    - " &8• &eNew&7: Bulk vanish (/vanish all, /vanish world)"
+    - " &8• &eNew&7: Rule presets (save/load/delete)"
+    - " &8• &eNew&7: Bossbar vanish status indicator"
+    - " &8• &eNew&7: Public VanishAPI for developers"
+    - " &8• &eNew&7: Vanish history stored in DB"
+    - " &8• &eNew&7: Auto-vanish on join per player"
+    - " &8• &eNew&7: Default scoreboard shows /vsb toggle hint"
+    - " &8• &eNew&7: Shift-right-click invsee integrates OpenInv & InvSee++"
+    - " &8• &eNew&7: /msg, /tell, /r, /me blocked for non-seers (detection prevention)"
+    - " &8• &eNew&7: messages.yml auto-migrates new keys on upgrade"
+    - " &8• &cFixed&7: Mob AI targeting vanished players (cross-version regression)"
+    - " &8• &cFixed&7: Folia scheduler illegal delay crash (reported in #11)"
+    - " &8• &cFixed&7: Mass disconnect on unvanish (glow packet race + packet burst)"
+  footer: "&7-------------------------------"

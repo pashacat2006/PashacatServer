@@ -1,0 +1,8 @@
+isEnabled: true
+name: '&2Tommyknockers Modules Free'
+description:
+- '&fA modular Tommyknocker mine for BetterStructures, guarded by EliteMobs bosses.'
+version: 0
+folderNameV2: Betterstructures Tommyknockers Free Pack
+contentPackageType: MODULAR
+nightbreakSlug: tommyknockers-modules-free

@@ -1,0 +1,18 @@
+newBalanceMsg: '&6&l[SCore] &eलेनदेन: &c-%amount%$ &eनई शेष राशि: &a%balance%$'
+newBalancePositiveMsg: '&6&l[SCore] &eलेनदेन: &a%amount%$ &eनई शेष राशि: &a%balance%$'
+timeLeft: '&8[&4SCore&8] &cकृपया प्रतीक्षा करें &e%time% &cपहले आप &6%activator% &cका
+  उपयोग करें!'
+noPlayerHit: '&cकोई खिलाड़ी प्रभावित नहीं हुआ'
+variableValueSet: '&e&l[SCore] &aमान सेट किया गया!'
+noEntityHit: '&cकोई एंटिटी प्रभावित नहीं हुई'
+actionbarEnd: '&c&lअवधि समाप्त &e&l%item% &c&lके लिए'
+haveActionbarOn: '&aआपका एक्शनबार पहले से ही &a&lचालू &aहै'
+errorMoneyMsg: '&4&l[SCore] &cआपके खाते में: &6%amount%$ &cनहीं हैं! &6(&eवर्तमान:
+  &a%balance%$&6)'
+damageCommandKill: '&8%target% &7को डैमेज कमांड से मारा गया है'
+setActionbarOn: '&aआपने अपना एक्शनबार &a&lचालू &aकिया है'
+haveActionbarOff: '&cआपका एक्शनबार पहले से ही &4&lबंद &cहै'
+shapeExecuted: '&2[SCore] &aShape executed!'
+variableDefaultValueSet: '&e&l[SCore] &aडिफ़ॉल्ट मान सेट किया गया!'
+setActionbarOff: '&cआपने अपना एक्शनबार &4&lबंद &cकिया है'
+actionbarMessage: '&a&lशेष समय &e&l%item% &a&lके लिए: &e&l%time%'

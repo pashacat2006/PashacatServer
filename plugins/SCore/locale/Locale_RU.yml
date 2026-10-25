@@ -1,0 +1,18 @@
+newBalanceMsg: '&6&l[SCore] &eTransaction: &c-%amount%$ &eТекущий балланс: &a%balance%$'
+newBalancePositiveMsg: '&6&l[SCore] &eTransaction: &a%amount%$ &eТекущий балланс:
+  &a%balance%$'
+timeLeft: '&8[&4SCore&8] &cПодожди &e%time% &cдо использования &6%activator%&c!'
+noPlayerHit: '&cНи один игрок не был поражен!'
+variableValueSet: '&aValue установлена !'
+noEntityHit: '&cНи одно существо не было поражено!'
+actionbarEnd: '&c&lДеактивация &e&l%item%'
+haveActionbarOn: '&aActionbar уже&a&lвключен!'
+errorMoneyMsg: '&4&l[SCore] &cУ вас не хватает столько: &6%amount%$ &cденег для активации
+  предмета! &6(&eCurrently: &a%balance%$&6)'
+damageCommandKill: '&8%target% &7убит(а) командой.'
+setActionbarOn: '&aВы &a&lактивировали Actionbar!'
+haveActionbarOff: '&cActionbar уже&4&lвыключен!'
+shapeExecuted: '&2[SCore] &aShape executed!'
+variableDefaultValueSet: '&e&l[SCore] &aDefault value set !'
+setActionbarOff: '&cВы &4&lдеактивировали Actionbar!'
+actionbarMessage: '&a&lВремя до конца &e&l%item% &a&l: &e&l%time%'

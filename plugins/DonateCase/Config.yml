@@ -1,0 +1,37 @@
+config: # Please do not touch this section
+  version: 28
+  type: config
+
+# More information about this configuration - https://jodexx.github.io/JodexIndustriesWiki/DonateCase/Configs/config
+
+# Do I need to check for plugin updates?
+update-checker: true
+
+database:
+  type: SQLITE # MYSQL, POSTGRESQL
+  settings: # mysql settings
+    host: 'localhost'
+    port: 3306
+    database: 'nameDataBase'
+    username: 'root'
+    password: ''
+
+# en_US, es_ES, ru_RU, ua_UA
+language: ru_RU
+hologram-driver: DecentHolograms # CMI, DecentHolograms, HolographicDisplays or FancyHolograms
+level-groups: # Clear this section if you want to disable
+  cobra: 2
+  killer: 1
+  default: 0
+date-format: "dd.MM HH:mm:ss"
+addons-help: true # Show help list for addons commands?
+use-packets: true # you need to install packetevents plugin
+# Caching for getting number of keys, case opens and history data
+# Used only if MySQL enabled
+# Actually used in placeholders (GUI and PlaceholderAPI)
+caching: 20 # in ticks
+# If true, formats the nickname of the player (searches for a similar one on the server).
+format-player-name: false
+converter: # Old data converters
+  keys: false # Keys.yml
+  data: false # Data.yml

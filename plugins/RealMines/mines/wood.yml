@@ -1,0 +1,45 @@
+name: wood
+type: SCHEMATIC
+world: world
+icon: OAK_PLANKS
+displayName: wood
+color: ORANGE
+reset:
+  silent: false
+  commands: []
+  percentage:
+    active: true
+    value: 5
+  time:
+    active: true
+    value: 60
+    countdown: 19
+settings:
+  break-permission: false
+  discard-break-action-messages: false
+  block-sets-mode: INCREMENTAL
+signs: []
+block-sets:
+  default:
+    description: 'Description for block set: default'
+    icon: CAULDRON
+    blocks:
+      GRASS_BLOCK:
+        percentage: 1.0
+        disabled-vanilla-drop: false
+        disabled-block-mining: false
+      LIGHT:
+        percentage: 1.0
+        disabled-vanilla-drop: false
+        disabled-block-mining: false
+      OAK_LEAVES:
+        percentage: 1.0
+        disabled-vanilla-drop: false
+        disabled-block-mining: false
+      OAK_LOG:
+        percentage: 1.0
+        disabled-vanilla-drop: false
+        disabled-block-mining: false
+schematic: woods.schem
+pos1: -111;58;80
+teleport: -111;58;80;179.24805;8.099977

@@ -1,0 +1,108 @@
+scores:
+  hidden: true
+
+display:
+  title:
+    text:
+      - "&l&cP"
+      - "&l&cPa"
+      - "&l&cPas"
+      - "&l&cPash"
+      - "&l&cPasha"
+      - "&l&cPasha&l&bC"
+      - "&l&cPasha&l&bCa"
+      - "&l&cPasha&l&bCat"
+      - "<stay ticks=100>&l&cPasha&l&bCat</stay>"
+    random: false
+    interval: 2
+
+  line-1:
+    text:
+      - "&7&m----------------"
+    random: false
+    interval: 100
+    score: 13
+
+  line-2:
+    text:
+      - "&fИгрок: &b%player_name%"
+    random: false
+    interval: 200
+    score: 12
+
+  line-3:
+    text:
+      - "&fДонат: &F%luckperms_prefix%"
+    random: false
+    interval: 100
+    score: 11
+
+  line-4:
+    text:
+      - "&fКлан: &d%javascript_clanrename%"
+    random: false
+    interval: 20
+    score: 10
+
+  line-5:
+    text:
+      - "&eМонеты: &a%vault_eco_balance%$"
+    random: false
+    interval: 20
+    score: 9
+
+  line-6:
+    text:
+      - "&7&m----------------"
+    random: false
+    interval: 100
+    score: 8
+
+  line-7:
+    text:
+      - "&cУбийства: &c%statistic_player_kills%"
+    random: false
+    interval: 40
+    score: 7
+
+  line-8:
+    text:
+      - "&7Смерти: &7%statistic_deaths%"
+    random: false
+    interval: 40
+    score: 6
+
+  line-9:
+    text:
+      - "&6Соты: &e%playerpoints_points%⛃"
+    random: false
+    interval: 20
+    score: 5
+
+  line-10:
+    text:
+      - "&fВремя игры: &b%statistic_hours_played%ч"
+    random: false
+    interval: 20
+    score: 4
+
+  line-11:
+    text:
+      - "&7&m----------------"
+    random: false
+    interval: 100
+    score: 3
+
+  line-12:
+    text:
+      - "&7Пинг: &f%player_ping%ms"
+    random: false
+    interval: 10
+    score: 2
+
+  line-13:
+    text:
+      - "&fСайт: &bpashacat.ru"
+    random: false
+    interval: 200
+    score: 1

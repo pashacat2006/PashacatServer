@@ -1,0 +1,34 @@
+prefix: '&7[&cASB&7] '
+nopermission: '%prefix&cУ вас нет прав на это!'
+toggle:
+  'on': '%prefix&aВы &2включили &aтабло!'
+  'off': '%prefix&aВы &cвыключили &aтабло!'
+  on_other_target: '%prefix&aИгрок %sender% &2включил &aвам табло!'
+  on_other_sender: '%prefix&aВы &2включили &aтабло игроку %target%!'
+  off_other_target: '%prefix&aИгрок %sender% &cвыключил &aвам табло!'
+  off_other_sender: '%prefix&aВы &cвыключили &aтабло игроку %target%!'
+reload:
+  start: '%prefix&aПерезагрузка плагина...'
+  completed: '%prefix&aПерезагрузка завершена за %MS% мс!'
+switch:
+  error: '%prefix&cУкажите существующее табло!'
+  success: '%prefix&aВключено табло &2%scoreboard%&a!'
+  nopermission: '%prefix&cУ вас нет прав на табло %scoreboard%!'
+  world: '%prefix&cЭто табло нельзя включить в этом мире!'
+  already_activated: '%prefix&cЭто табло у вас уже включено!'
+  already_active_other: '%prefix&cУ игрока %target% уже включено табло %scoreboard%!'
+  success_other: '%prefix&aИгроку %target% включено табло %scoreboard%!'
+  success_by_other: '%prefix&aИгрок %sender% сменил вам табло!'
+  world_other: '%prefix&cИгрок %target% не может включить %scoreboard% в своём мире!'
+  nopermission_other: '%prefix&cУ игрока %target% нет прав на табло %scoreboard%!'
+trigger:
+  insert: '%prefix&cНе удалось подключить обработчик триггеров, триггеры не будут работать!'
+  register:
+    invalid: '%prefix&cНе удалось включить триггер для класса %class_name%: неверное имя класса!'
+    second: '%prefix&cНе удалось включить триггер для класса %class_name%: триггер уже включён!'
+    invalid-method: '%prefix&cНе удалось включить триггер для класса %class_name%: неверное имя метода!'
+plugin:
+  information: '%prefix&aНа сервере стоит AnimatedScoreboard версии &2%version%&a!'
+invalid_player: '%prefix&cИгрок %value% не найден или не в сети!'
+invalid_command: '%prefix&cКоманды ''/%command%'' нет. Список команд: ''/asb help''!'
+invalid_sender: '%prefix&cЭту команду можно выполнить только в игре!'

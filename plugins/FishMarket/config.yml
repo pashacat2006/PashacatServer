@@ -1,0 +1,31 @@
+# Цены рыбы. Ключ — id предмета ExecutableItems (имя файла в plugins/ExecutableItems/items).
+# Продаются только предметы с этими id; всё остальное при закрытии меню возвращается игроку.
+fish:
+  fish_1:
+    name: "&fУклейка"
+    price: 20
+  fish_2:
+    name: "&fКарась"
+    price: 30
+  fish_3:
+    name: "&aЩука"
+    price: 60
+  fish_4:
+    name: "&6Золотая рыбка"
+    price: 150
+  fish_5:
+    name: "&d&lКоролевский иглобрюх"
+    price: 500
+  fish_6:
+    name: "&6Судак"
+    price: 200
+
+currency: "$"
+
+messages:
+  title: "&8Скупщик рыбы"
+  sold: "&aПродано рыб: &f%amount% &aза &e%money%%currency%"
+  nothing: "&cПоложите в меню рыбу, пойманную в зоне рыбалки."
+  no-economy: "&cЭкономика не найдена, продажа недоступна."
+  reloaded: "&aНастройки скупщика перезагружены."
+  players-only: "&cКоманда только для игроков."

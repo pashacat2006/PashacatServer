@@ -1,0 +1,37 @@
+Events:
+  custom_fishing_region:
+    type: player_fish
+    conditions:
+    # Игрок вытащил предмет из воды (без этих двух проверок set_item не сработает)
+    - "%state% == CAUGHT_FISH"
+    # На 1.20.5+ тип выловленного предмета называется ITEM (раньше DROPPED_ITEM)
+    - "%caught_type% == ITEM"
+    # Игрок стоит в регионе WorldGuard "fishing" (нужно расширение PlaceholderAPI WorldGuard)
+    - "%worldguard_region_name% == fishing"
+    actions:
+      default:
+      # Шансы считаются относительно друг друга, сумма не обязана быть 100
+      - "execute_action_group: ukleyka:50;karas:40;shuka:35;zolotaya:30;iglobryukh:5;sudak:27"
+      ukleyka:
+      - "set_item: saved_item:fish_1"
+      - "actionbar: &7Вы поймали &fУклейку;60"
+      karas:
+      - "set_item: saved_item:fish_2"
+      - "actionbar: &7Вы поймали &fКарася;60"
+      shuka:
+      - "set_item: saved_item:fish_3"
+      - "actionbar: &7Вы поймали &aЩуку;60"
+      - "playsound: ENTITY_EXPERIENCE_ORB_PICKUP;1;1.2"
+      zolotaya:
+      - "set_item: saved_item:fish_4"
+      - "title: 10;40;10;&6Золотая рыбка!;&7Редкий улов"
+      - "playsound: ENTITY_PLAYER_LEVELUP;1;1.5"
+      iglobryukh:
+      - "set_item: saved_item:fish_5"
+      - "title: 10;60;10;&d&lЛЕГЕНДАРНЫЙ УЛОВ;&fКоролевский иглобрюх"
+      - "playsound: UI_TOAST_CHALLENGE_COMPLETE;1;1"
+      - "to_all: message: &d%player% &fпоймал &d&lКоролевского иглобрюха&f!"
+      sudak:
+      - "set_item: saved_item:fish_6"
+      - "actionbar: &7Вы поймали &aСудака;60"
+      - "playsound: UI_TOAST_CHALLENGE_COMPLETE;1;1"

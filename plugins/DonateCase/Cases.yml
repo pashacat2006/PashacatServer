@@ -1,0 +1,23 @@
+config:
+  version: 11
+  type: cases
+DonateCase:
+  Cases:
+    DonateCase:
+      type: default
+      location:
+        x: -73.0
+        y: 60.0
+        z: 59.0
+        pitch: 50.0
+        yaw: 50.0
+        world: world
+    DailyCase:
+      type: plus
+      location:
+        x: -74.0
+        y: 60.0
+        z: 62.0
+        pitch: 52.0
+        yaw: 52.0
+        world: world

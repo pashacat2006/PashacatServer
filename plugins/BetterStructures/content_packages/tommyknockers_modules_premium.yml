@@ -1,0 +1,9 @@
+isEnabled: true
+name: '&2Tommyknockers Modules Premium'
+description:
+- '&fMore Tommyknocker mine modules and five more EliteMobs bosses.'
+- '&cRequires Tommyknockers Modules Free.'
+version: 0
+folderNameV2: Betterstructures Tommyknockers Premium Pack
+contentPackageType: MODULAR
+nightbreakSlug: tommyknockers-modules-premium

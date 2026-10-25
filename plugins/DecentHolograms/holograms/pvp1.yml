@@ -1,0 +1,12 @@
+location: world:-108,589:60,286:95,700
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&e Царь Горы'
+    height: 0.3
+  actions: {}

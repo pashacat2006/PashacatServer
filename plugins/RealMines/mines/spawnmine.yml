@@ -1,0 +1,46 @@
+name: spawnmine
+type: BLOCKS
+world: world
+icon: DIAMOND_ORE
+displayName: spawnmine
+color: BLUE
+pos1: -72;56;84
+pos2: -79;49;78
+reset:
+  silent: false
+  commands: []
+  percentage:
+    active: true
+    value: 20
+  time:
+    active: true
+    value: 120
+    countdown: 74
+settings:
+  break-permission: false
+  discard-break-action-messages: false
+  block-sets-mode: INCREMENTAL
+signs: []
+block-sets:
+  default:
+    description: 'Description for block set: default'
+    icon: CAULDRON
+    blocks:
+      STONE:
+        percentage: 1.0
+        disabled-vanilla-drop: false
+        disabled-block-mining: false
+      DIAMOND_ORE:
+        percentage: 0.05
+        disabled-vanilla-drop: true
+        disabled-block-mining: false
+        break-actions:
+          action-mqpzndxj-1792574052:
+            type: GIVE_MONEY
+            chance: 50.0
+            value: 500.0
+      COAL_ORE:
+        percentage: 0.2
+        disabled-vanilla-drop: false
+        disabled-block-mining: false
+teleport: -79;57;77;-40.95493;44.099995

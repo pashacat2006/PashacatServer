@@ -1,0 +1,6 @@
+*.yml filter=redact
+*.yaml filter=redact
+*.properties filter=redact
+*.conf filter=redact
+*.jar binary
+*.png binary

@@ -1,0 +1,31 @@
+# ╔══════════════════════════════════╗
+# ║   StarterLootChest  Config       ║
+# ╚══════════════════════════════════╝
+
+# Partikel-Effekt wenn eine Kiste geoeffnet wird
+particles: true
+
+# Sound wenn eine Kiste geoeffnet wird
+sounds: true
+
+# Schwebendes Hologramm ueber registrierten Kisten (TextDisplay-Entity)
+holograms: true
+hologram-height: 1.8
+
+# Broadcast an alle Spieler beim ersten Oeffnen einer Kiste
+# Platzhalter: {player}, {chest}
+broadcast-on-first-open: true
+broadcast-format: "&6&l✦ &r&e{player} &6hat die Kiste &e{chest} &6geoeffnet!"
+
+# Max. Eintraege im Oeffnungs-Log pro Kiste
+log-max-entries: 20
+
+# Nachrichten (& Farbcodes unterstuetzt)
+messages:
+  already-opened: "&c✗ Du hast diese Kiste bereits {max}x geoeffnet!"
+  no-permission: "&c✗ Du hast keine Berechtigung, diese Kiste zu oeffnen."
+  on-cooldown: "&c✗ Du kannst diese Kiste erst in &e{time} &cwieder oeffnen."
+  loot-received-remaining: "&a✔ Loot erhalten! Du kannst diese Kiste noch &e{remaining}x &aoeffnen."
+  loot-received-last: "&e✔ Loot erhalten! Du hast diese Kiste vollstaendig gepluentert."
+  loot-received-unlimited: "&a✔ Loot erhalten!"
+  loot-received-cooldown: "&a✔ Loot erhalten! In &e{cooldown} &avieder verfuegbar."

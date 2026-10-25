@@ -1,0 +1,12 @@
+location: world:-99,795:61,413:56,300
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&eМагазины'
+    height: 0.3
+  actions: {}

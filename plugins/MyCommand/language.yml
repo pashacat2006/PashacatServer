@@ -1,0 +1,43 @@
+#-----------------------------------------------------------------------------------------------------------#
+#							  MyCommand Language config file (last update v5.6.9)							#
+#		   Use & as color code ,and %s for variables - COOLDOWN accept $days$hours$minutes$seconds			#
+#						BukkitDev Help page : http://dev.bukkit.org/server-mods/mycommand/					#
+#-----------------------------------------------------------------------------------------------------------#
+LANGUAGE:
+ PREFIX: "&7MyCmd&8>&r "
+ ECONOMY_COST: "&6Команда стоила %s. Ваш баланс: %s"
+ ECONOMY_NO_MONEY: "&6Для этой команды нужно &e%s&6$."
+ DEBUG_EXECUTE: "Выполняется: "
+ COMMAND_ARGS_LINE1: "Не хватает аргументов. Вы написали "
+ COMMAND_ARGS_LINE2: "-> Выполняемые команды:"
+ ITEM_NOSET: "&dНа этом предмете нет команд"
+ NO_PERMISSIONS: "&cУ вас нет прав на это."
+ SIGN_REMOVED: "Табличка удалена."
+ SIGN_EMPTY: "Все строки пустые."
+ SIGN_CREATED: "&aТабличка создана! &2Больше настроек: /mycmd-signset"
+ BLOCK_REMOVED: "Блок удалён."
+ BLOCK_DELAY: "&cС этим блоком можно снова взаимодействовать через %s сек."
+ NPCS_DELAY: "&cПодождите %s сек. перед повторным взаимодействием"
+ NPCS_NO_COMMAND: "&cУ этого NPC нет команд."
+ HOLOGRAM_DELAY: "&cС этой голограммой можно снова взаимодействовать через %s сек."
+ INTERACTION_DELAY: "&cПодождите %s сек. перед повторным взаимодействием"
+ WARMUP1: "&6Команда выполнится через &e%s &6сек."
+ WARMUP2: "&aДля вас эта команда выполняется без ожидания"
+ WARMUP3: "&cВы уже ждёте выполнения этой команды. Осталось &e%s&c сек."
+ COOLDOWN1: "&cЭту команду можно снова использовать через $days$hours$minutes$seconds"
+ COOLDOWN2: "&cДля вас у этой команды нет перезарядки"
+ RUN_AS_CONSOLE_MESSAGE: "&aРезультат смотрите в консоли."
+ DENY_CONSOLE_EXECUTION: "&cЭту команду нельзя выполнить из консоли"
+ CHARACTERS_NOT_ALLOWED: "&cВ вашем вводе есть запрещённые символы."
+ SKIPPED_EXECUTE_MODE: "&eДля вас проверка режима выполнения пропущена."
+ BROADCAST_RADIUS_NOT_FOUND: "&cЭто сообщение никто не получил"
+ TIME_DAYS: "дн. "
+ TIME_DAY: "дн. "
+ TIME_SECONDS: "сек."
+ TIME_SECOND: "сек."
+ TIME_HOURS: "ч. "
+ TIME_HOUR: "ч. "
+ TIME_MINUTES: "мин. "
+ TIME_MINUTE: "мин. "
+ #The PLAYERDATA_ERROR_MESSAGE is used also to check when a value isn't stored at all.
+ PLAYERDATA_ERROR_MESSAGE: "NoData"

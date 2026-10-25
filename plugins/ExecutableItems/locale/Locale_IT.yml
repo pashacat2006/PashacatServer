@@ -1,0 +1,33 @@
+noEntityHit: '&8[&4Executable&7Items&8] &cNessuna entità è stata colpita'
+requiredLevel: '&8[&4Executable&7Items&8] &cDevi essere almeno al &6livello &6&l%level%&c
+  per usare questo oggetto!'
+invalidOwner: '&8[&4Executable&7Items&8] &cQuesto oggetto può essere usato solo dal
+  proprietario!'
+errorUPDItem: '&7[&4Executable&7Items] &cHai raggiunto il numero massimo di utilizzi
+  per &e%item%&c. Utilizzi massimi per giorno: &7(&e%max_use_per_day_item%&7)'
+requiredEISeparator: '&c | '
+disableRegion: '&8[&4Executable&7Items&8] &cNon puoi usare &e%item%&c in questa regione!'
+requiredItemsSeparator: '&c | '
+waitProjectile: '&cDevi aspettare che il proiettile colpisca qualcosa!'
+noOwner: '&cNessun proprietario'
+receiveItem: '&8[&aExecutable&7Items&8] &aHai ricevuto &a%quantity%x &e%item%'
+use: '&7&oUtilizzi rimanenti: '
+noHit: '&8[&4Executable&7Items&8] &cNessun giocatore è stato colpito'
+requiredEIFirstPart: '&4ExecutableItem richiesto/i: '
+fullInventory: '&8[&4Executable&7Items&8] &cIl tuo inventario è pieno, &e%item% &cè
+  stato droppato.'
+requirePermission: '&8[&4Executable&7Items&8] &cNon hai il permesso per usare &e%item%&c!'
+requiredItemsQuantity: ' &cx &6'
+requiredItemsFirstPart: '&4Oggetto/i richiesto/i: '
+errorUPDActivator: '&8[&4Executable&7Items&8]&c Hai raggiunto il numero massimo di
+  utilizzi per &e%activator%&c! Utilizzi massimi per giorno: &7(&e%max_use_per_day_activator%&7)&4'
+disableWorld: '&8[&4Executable&7Items&8] &cNon puoi usare &e%item%&c in questo mondo!'
+cancelCraft: '&8[&4Executable&7Items&8] &cNon puoi craftare con questo ExecutableItem!'
+customCommandDamageKillMessage: '%player% ha distrutto %target% con %item%'
+giveMessage: '&8[&aExecutable&7Items&8] &aHai dato a &e&n%player%&r &a%quantity%x
+  &e%item%'
+timeLeft: '&8[&4Executable&7Items&8] &cAttendi &e%time% &cprima di usare &6%activator%&c!'
+requiredEIQuantity: ' &cx &6'
+pickupLimitMessage: '&8[&4Executable&7Items&8] &cNon puoi avere più di %limit% ExecutableItems!'
+refreshValid: '&2&l[ExecutableItems] &aExecutableItem/i &e%id% &anel inventario del/dei
+  giocatore/i &e%player% &asono stati correttamente ripristinati!'

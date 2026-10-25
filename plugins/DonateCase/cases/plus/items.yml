@@ -1,0 +1,21 @@
+config: # Please do not touch this section
+  version: 1
+  type: case_items
+
+# Check our detailed documentation about this file - https://jodexx.github.io/JodexIndustriesWiki/DonateCase/Configs/Cases/prizes
+
+items:
+  iron:
+    group: iron
+    chance: 65
+    material:
+      id: GRAY_WOOL # see: https://jodexx.github.io/JodexIndustriesWiki/DonateCase/materials
+      display-name: '&lЖелезо'
+      enchanted: false
+    index: 0
+    give-type: ONE
+    actions:
+      - '[command] give %player% minecraft:iron_ingot'
+      - '[title] &aПоздравляем!;&5Вы выиграли &f%groupdisplayname%'
+    alternative-actions: # is performed if the group is lower in rank than the player's group in level-groups
+      - "[message] &cОшибка 10f1"

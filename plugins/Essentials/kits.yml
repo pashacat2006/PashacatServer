@@ -1,0 +1,51 @@
+kits:
+  cobra:
+    delay: 576000
+    items:
+    - slot:0 netherite_sword 1 name:меч_кобры lore:&7|Меч_кобры|Донатный_предмет|&7&oОсталось_использований:_1
+      bane_of_arthropods:5 blast_protection:3 channeling:2 depth_strider:2 efficiency:6
+      fire_aspect:5 infinity:3 knockback:4 multishot:4 power:8 unbreaking:10 wind_burst:5
+    - slot:1 netherite_pickaxe 1 name:кирка_кобры lore:кирка_кобры|&7&oОсталось_использований:_1
+      bane_of_arthropods:3 blast_protection:5 breach:2 channeling:3 efficiency:6 unbreaking:6
+    - slot:2 mace 1 name:булава_кобры lore:булава_кобры|&7&oОсталось_использований:_1
+      blast_protection:4 breach:4 unbreaking:1 wind_burst:4
+    - slot:3 bow 1 name:лук_кобры lore:лук_кобры|&7&oОсталось_использований:_1 blast_protection:3
+      channeling:3 flame:4 unbreaking:5
+    - slot:4 wind_charge 10 name:заряд_ветра lore:заряд_ветра|&7&oОсталось_использований:_1
+      unbreaking:1 wind_burst:3
+    - slot:9 netherite_helmet 1 name:Шлем_кобры lore:обычный_шлем_от_кобры|&7&oОсталось_использований:_1
+      aqua_affinity:4 fire_protection:5 infinity:3 unbreaking:222 wind_burst:3
+    - slot:10 netherite_chestplate 1 name:нагрудник_кобры lore:нагрудник_кобры|&7&oОсталось_использований:_1
+      aqua_affinity:3 channeling:2 density:4 unbreaking:6 wind_burst:5
+    - slot:11 netherite_leggings 1 name:поножи_кобры lore:поножи_кобры|&7&oОсталось_использований:_1
+      blast_protection:3 fire_protection:5 unbreaking:8 wind_burst:4
+    - slot:12 netherite_boots 1 name:ботинки_кобры lore:ботинки_кобры|&7&oОсталось_использований:_1
+      blast_protection:5 breach:4 fire_protection:5 unbreaking:5
+    - slot:27 arrow 64
+  killer:
+    delay: 21600000
+    items:
+    - slot:0 iron_sword 1
+    - slot:1 iron_axe 1
+    - slot:2 water_bucket 1
+    - slot:3 flint_and_steel 1
+    - slot:7 chainmail_boots 1
+    - slot:9 chainmail_boots 1
+    - slot:10 chainmail_leggings 1
+    - slot:11 iron_chestplate 1
+    - slot:12 iron_helmet 1
+  start:
+    delay: 172800
+    items:
+    - slot:0 stone_sword 1
+    - slot:1 stone_shovel 1
+    - slot:2 stone_axe 1
+    - slot:3 iron_pickaxe 1
+    - slot:4 stone_hoe 1
+    - slot:5 cooked_beef 64
+    - slot:6 cobblestone 64
+    - slot:7 fishing_rod 1
+    - slot:9 leather_boots 1 color:10511680
+    - slot:10 leather_leggings 1 color:10511680
+    - slot:11 leather_chestplate 1 color:10511680
+    - slot:12 leather_helmet 1 color:10511680

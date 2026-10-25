@@ -1,0 +1,23 @@
+RealMines:
+  Prefix: '&fReal&9Mines &7> '
+  teleportPlayers: true
+  teleportMessage: true
+  actionbarMessages: true
+  placeFarmLandBelowCrop: true
+  resetMinesWhenNoPlayers: false
+  broadcastResetMessageOnlyInWorld: false
+  useButtonGUIForPercentages: true
+  useWorldEditForBlockPlacement: true
+  ignoreAirBlocksSchematicPasting: true
+  disableMineResetOnServerStart: false
+  disableMineClearingWhenDeleting: false
+  announceTimes:
+  - 30
+  - 20
+  - 10
+  - 5
+  - 4
+  - 3
+  - 2
+  - 1
+Version: '10'

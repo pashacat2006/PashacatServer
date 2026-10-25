@@ -1,0 +1,175 @@
+config: # Please do not touch this section
+  version: 16
+  type: animations
+
+# More information about this configuration - https://jodexx.github.io/JodexIndustriesWiki/DonateCase/Configs/animations
+
+SHAPE:
+  ItemSlot: HEAD # HEAD, HAND, OFF_HAND, FEET, LEGS, CHEST
+  SmallArmorStand: true
+  Firework: true
+  #  Pose:
+  #    Head:
+  #      x: 0
+  #      y: 0
+  #      z: 0
+  #    Body:
+  #      x: 0
+  #      y: 0
+  #      z: 0
+  #    RightArm:
+  #      x: 0
+  #      y: 0
+  #      z: 0
+  #    LeftArm:
+  #      x: 0
+  #      y: 0
+  #      z: 0
+  #    RightLeg:
+  #      x: 0
+  #      y: 0
+  #      z: 0
+  #    LeftLeg:
+  #      x: 0
+  #      y: 0
+  #      z: 0
+  Particle:
+    Orange:
+      Size: 1.0
+      Rgb: 255, 165, 0
+    White:
+      Size: 1.0
+      Rgb: 255, 255, 255
+  StartPosition:
+    x: 0.5
+    y: -0.1
+    z: 0.5
+  Tail:
+    Radius: 0.5
+  Scroll:
+    Period: 2
+    Time: 15
+    Height: 0.91
+    Interval: 1
+    Yaw: 20.0
+    Volume: 10
+    Pitch: 1
+    Sound: UI_BUTTON_CLICK
+  End:
+    Time: 25
+
+RAINLY:
+  ItemSlot: HEAD # HEAD, HAND, OFF_HAND, FEET, LEGS, CHEST
+  SmallArmorStand: true
+  Scroll:
+    Particle: FIREWORK
+    Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    Volume: 1
+    Pitch: 1
+  End:
+    Particle: EXPLOSION
+    Sound: ENTITY_GENERIC_EXPLODE
+    Volume: 1
+    Pitch: 1
+  CloudParticle: CLOUD
+  FallingParticle: FALLING_WATER # you can use all particles, full list: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
+  # FALLING_WATER
+  # FALLING_LAVA
+  # FALLING_DUST
+  # FALLING_HONEY
+  # FALLING_NECTAR
+  # FALLING_OBSIDIAN_TEAR
+
+FIREWORK:
+  ItemSlot: HEAD # HEAD, HAND, OFF_HAND, FEET, LEGS, CHEST
+  SmallArmorStand: true
+  Power: 0 # Firework power
+  StartPosition:
+    x: 0.5
+    y: 1
+    z: 0.5
+  Scroll:
+    Period: 2
+    Yaw: 20.0
+  FireworkColors:
+    - RED
+    - BLUE
+    - GREEN
+    - YELLOW
+
+WHEEL:
+  Type: FULL # or RANDOM
+  ItemSlot: HEAD # HEAD, HAND, OFF_HAND, FEET, LEGS, CHEST
+  SmallArmorStand: true
+  ItemsCount: 6 # only for RANDOM type
+  Shuffle: true # only for FULL type
+  CircleRadius: 2
+#  Facing: UP # DOWN
+  StartPosition:
+    x: 0.5
+    y: -0.5
+    z: 0.5
+  Flame:
+    Enabled: true
+    Particle: FLAME
+  Scroll:
+    Count: 1
+    Time: 150
+    EaseAmount: 2.5 # 1 = linear
+    Sound: UI_BUTTON_CLICK
+    Volume: 10
+    Pitch: 1
+
+RANDOM:
+  SHAPE: 15 # Chance
+  RAINLY: 15
+  FIREWORK: 15
+  WHEEL: 15
+  POP: 15
+  SELECT: 15
+
+POP:
+  Scroll:
+    Sound: ENTITY_ITEM_PICKUP
+    Volume: 10
+    Pitch: 1
+  Facing: EAST # WEST, NORTH, EAST, SOUTH
+  Rounded: true
+  Radius: 1.5
+#  Period: 0
+#  ItemSlot: HEAD
+
+SELECT:
+  Facing: EAST # WEST, NORTH, EAST, SOUTH
+  Timeout: 600 # in ticks
+  Radius: 1.5
+  Item: CHEST
+#  Period: 0
+#  ItemSlot: HEAD
+
+FUTURE_WHEEL:
+#  Facing: EAST
+  StartPosition:
+    x: 0.5
+    y: -0.5
+    z: 0.5
+  HologramPosition:
+    x: 0.0
+    y: 1.0
+    z: 0.0
+  Spawn:
+    Interval: 20 # in ticks
+    Particle: SMOKE
+    ParticleCount: 3
+    Sound: ENTITY_ARROW_SHOOT
+    Volume: 10
+    Pitch: 1
+  Scroll:
+    Particle: SMOKE
+    ParticleCount: 3
+    Sound: ENTITY_ARROW_SHOOT
+    Volume: 10
+    Pitch: 1
+  CircleRadius: 1.0
+  ScrollingTime: 120 # in ticks, this value will be appended to the total spawn-time (spawn-time = {item count} * SpawnInterval)
+  SkipTicks: 5 # this means that every 5th tick an item in the circle will glow
