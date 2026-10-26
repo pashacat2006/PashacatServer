@@ -7,6 +7,6 @@ facing: 0.0
 down-origin: false
 pages:
 - lines:
-  - content: Яма &bRtp
+  - content: Выход в мир
     height: 0.3
   actions: {}

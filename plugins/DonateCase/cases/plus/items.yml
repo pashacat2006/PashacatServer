@@ -19,3 +19,59 @@ items:
       - '[title] &aПоздравляем!;&5Вы выиграли &f%groupdisplayname%'
     alternative-actions: # is performed if the group is lower in rank than the player's group in level-groups
       - "[message] &cОшибка 10f1"
+  gold:
+    group: gold
+    chance: 42
+    material:
+      id: YELLOW_WOOL # see: https://jodexx.github.io/JodexIndustriesWiki/DonateCase/materials
+      display-name: '&l&aЗолото'
+      enchanted: false
+    index: 0
+    give-type: ONE
+    actions:
+      - '[command] give %player% minecraft:gold_ingot 15'
+      - '[title] &aПоздравляем!;&5Вы выиграли &f%groupdisplayname%'
+    alternative-actions: # is performed if the group is lower in rank than the player's group in level-groups
+      - "[message] &cОшибка 10f1"
+  enderpearl:
+    group: enderpearl
+    chance: 26
+    material:
+      id: PURPLE_WOOL # see: https://jodexx.github.io/JodexIndustriesWiki/DonateCase/materials
+      display-name: '&l&dЭдр пеарл'
+      enchanted: false
+    index: 0
+    give-type: ONE
+    actions:
+      - '[command] give %player% minecraft:ender_pearl 9'
+      - '[title] &aПоздравляем!;&5Вы выиграли &f%groupdisplayname%'
+    alternative-actions: # is performed if the group is lower in rank than the player's group in level-groups
+      - "[message] &cОшибка 10f1"
+  dimound:
+    group: dimound
+    chance: 12
+    material:
+      id: CYAN_WOOL # see: https://jodexx.github.io/JodexIndustriesWiki/DonateCase/materials
+      display-name: '&l&n&bАлмаз'
+      enchanted: false
+    index: 0
+    give-type: ONE
+    actions:
+      - '[command] give %player% minecraft:dimound 5'
+      - '[title] &aПоздравляем!;&5Вы выиграли &f%groupdisplayname%'
+    alternative-actions: # is performed if the group is lower in rank than the player's group in level-groups
+      - "[message] &cОшибка 10f1"
+  netherar:
+    group: neatherite
+    chance: 7
+    material:
+      id: BROWN_WOOL # see: https://jodexx.github.io/JodexIndustriesWiki/DonateCase/materials
+      display-name: '&4Незерит'
+      enchanted: false
+    index: 0
+    give-type: ONE
+    actions:
+      - '[command] give %player% minecraft:netherite_ingot 3'
+      - '[title] &aПоздравляем!;&5Вы выиграли &f%groupdisplayname%'
+    alternative-actions: # is performed if the group is lower in rank than the player's group in level-groups
+      - "[message] &cОшибка 10f1"
