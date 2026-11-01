@@ -1,0 +1,112 @@
+pages:
+  page1:
+    gui-rows: 6
+    items:
+      '1':
+        material: COBBLESTONE
+        displayname: "&fБулыжник"
+        slot: 10
+        buy: 8
+        sell: 1
+      '2':
+        material: STONE
+        displayname: "&fКамень"
+        slot: 11
+        buy: 12
+        sell: 3
+      '3':
+        material: STONE_BRICKS
+        displayname: "&fКаменные кирпичи"
+        slot: 12
+        buy: 16
+        sell: 3
+      '4':
+        material: DIRT
+        displayname: "&fЗемля"
+        slot: 13
+        buy: 8
+        sell: 1
+      '5':
+        material: SAND
+        displayname: "&fПесок"
+        slot: 14
+        buy: 12
+        sell: 1
+      '6':
+        material: GRAVEL
+        displayname: "&fГравий"
+        slot: 15
+        buy: 12
+        sell: 1
+      '7':
+        material: GLASS
+        displayname: "&fСтекло"
+        slot: 16
+        buy: 24
+        sell: 3
+      '8':
+        material: OAK_LOG
+        displayname: "&fДубовое бревно"
+        slot: 19
+        buy: 24
+        sell: 2
+      '9':
+        material: SPRUCE_LOG
+        displayname: "&fЕловое бревно"
+        slot: 20
+        buy: 24
+        sell: 2
+      '10':
+        material: BIRCH_LOG
+        displayname: "&fБерёзовое бревно"
+        slot: 21
+        buy: 24
+        sell: 2
+      '11':
+        material: DARK_OAK_LOG
+        displayname: "&fБревно тёмного дуба"
+        slot: 22
+        buy: 32
+        sell: 2
+      '12':
+        material: CHERRY_LOG
+        displayname: "&fВишнёвое бревно"
+        slot: 23
+        buy: 40
+        sell: 3
+      '13':
+        material: OAK_PLANKS
+        displayname: "&fДубовые доски"
+        slot: 24
+        buy: 8
+        sell: 0.5
+      '14':
+        material: SPRUCE_PLANKS
+        displayname: "&fЕловые доски"
+        slot: 25
+        buy: 8
+        sell: 0.5
+      '15':
+        material: OBSIDIAN
+        displayname: "&fОбсидиан"
+        slot: 28
+        buy: 600
+        sell: 130
+      '16':
+        material: NETHERRACK
+        displayname: "&fНезерак"
+        slot: 29
+        buy: 8
+        sell: 0.5
+      '17':
+        material: WHITE_WOOL
+        displayname: "&fБелая шерсть"
+        slot: 30
+        buy: 100
+        sell: 20
+      '18':
+        material: BRICKS
+        displayname: "&fКирпичи"
+        slot: 31
+        buy: 100
+        sell: 21

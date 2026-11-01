@@ -1,0 +1,106 @@
+titles:
+  money_trader:
+    name: "Торговец"
+    suffix: "&e[Торговец]&r"
+    kind: "MONEY"
+    requirement: 5000
+    material: "GOLD_INGOT"
+    slot: 11
+  money_rich:
+    name: "Богач"
+    suffix: "&6[Богач]&r"
+    kind: "MONEY"
+    requirement: 25000
+    material: "EMERALD"
+    slot: 20
+  money_magnate:
+    name: "Магнат"
+    suffix: "&6[Магнат]&r"
+    kind: "MONEY"
+    requirement: 100000
+    material: "GOLD_BLOCK"
+    slot: 29
+  money_aristocrat:
+    name: "Аристократ"
+    suffix: "&d[Аристократ]&r"
+    kind: "MONEY"
+    requirement: 250000
+    material: "DIAMOND"
+    slot: 38
+  money_emperor:
+    name: "Император"
+    suffix: "&6&l[Император]&r"
+    kind: "MONEY"
+    requirement: 1000000
+    material: "NETHER_STAR"
+    slot: 47
+  time_observer:
+    name: "Наблюдатель"
+    suffix: "&a[Наблюдатель]&r"
+    kind: "PLAYTIME"
+    requirement: 72000
+    material: "CLOCK"
+    slot: 13
+  time_regular:
+    name: "Постоялец"
+    suffix: "&2[Постоялец]&r"
+    kind: "PLAYTIME"
+    requirement: 360000
+    material: "COMPASS"
+    slot: 22
+  time_oldtimer:
+    name: "Старожил"
+    suffix: "&b[Старожил]&r"
+    kind: "PLAYTIME"
+    requirement: 1728000
+    material: "BOOK"
+    slot: 31
+  time_veteran:
+    name: "Ветеран"
+    suffix: "&9[Ветеран]&r"
+    kind: "PLAYTIME"
+    requirement: 5184000
+    material: "AMETHYST_SHARD"
+    slot: 40
+  time_legend:
+    name: "Легенда сервера"
+    suffix: "&d&l[Легенда сервера]&r"
+    kind: "PLAYTIME"
+    requirement: 12096000
+    material: "NETHER_STAR"
+    slot: 49
+  kills_duelist:
+    name: "Дуэлянт"
+    suffix: "&e[Дуэлянт]&r"
+    kind: "KILLS"
+    requirement: 10
+    material: "WOODEN_SWORD"
+    slot: 15
+  kills_hunter:
+    name: "Охотник"
+    suffix: "&6[Охотник]&r"
+    kind: "KILLS"
+    requirement: 50
+    material: "STONE_SWORD"
+    slot: 24
+  kills_gladiator:
+    name: "Гладиатор"
+    suffix: "&c[Гладиатор]&r"
+    kind: "KILLS"
+    requirement: 100
+    material: "IRON_SWORD"
+    slot: 33
+  kills_conqueror:
+    name: "Завоеватель"
+    suffix: "&4[Завоеватель]&r"
+    kind: "KILLS"
+    requirement: 250
+    material: "DIAMOND_SWORD"
+    slot: 42
+  kills_executioner:
+    name: "Палач"
+    suffix: "&4&l[Палач]&r"
+    kind: "KILLS"
+    requirement: 500
+    material: "NETHERITE_SWORD"
+    slot: 51

@@ -1,0 +1,382 @@
+updating-shop-settings: Обновление настроек магазина...
+adding-new-shop-shops,yml: Добавление нового магазина под названием %shopsection% в shops.yml.
+adding-new-shop-sections,yml: Добавление нового магазина %shopsection% в sections.yml.
+disabled-due-no-vault: Отключено из-за отсутствия зависимости Vault, установите Vault.
+disabled-due-no-economy: Отключено из-за отсутствия зависимости Vault, установите Vault.
+update-available: Доступно обновление для EconomyShopGUI, ваша версия v%plugin_version%. Новая версия v%latest_version%.
+done: Перезагружены конфиграции - за %millis%мс
+updating-sections-config: Обновление конфигурации разделов...
+debug-mode-enabled: Режим отладки включен.
+economy-provider-null: EconomyProvider не установлен.
+successfully-hooked-into-vault: Успешно подключено к Vault.
+language-file-using: Использование %languagefile% в качестве языкового файла.
+cannot-find-language-file: Не могу найти языковой файл!
+minecraft-version-using: Используется версия minecraft %version%...
+checking-each-item: Проверка каждого предмета на неправильные/отсутствующие значений...
+loading-items: Загрузка всех предметов...
+could-not-find-valid-version: Не удалось найти подходящую версию для этой версии сервера. Это приведет к тому, что у плагина не будет используемой версии, что приведет к тому, что многие предметы/методы не будут работать. Пожалуйста, используйте поддерживаемую версию Minecraft.
+updating-configs: Обновление конфигураций, поскольку была обнаружена более новая версия...
+creating-backup: Создавая резервную копию из старого %fileName%, файл можно найти в папке резервных копий внутри папки плагина EconomyShopGUI.
+discounts-feature-unavailable: Невозможно включить функцию скидок, потому что не найден плагин для прав.
+#Main Shop Inventory
+inventory-main-shop-title: '&8Магазин сервера'
+profile: '&aПрофиль'
+name: '&6Имя'
+money: '&6Деньги'
+level: '&6Уровень'
+#SellGUI inventory
+inventory-sellgui-title: '&8Продать ресурсы'
+#Buystacks Inventory title
+inventory-buystacks-title: '&8Выберите количество &lстаков'
+#Transaction screen
+inventory-howmuchsell-title: '&8Продать: %item%'
+inventory-howmuchbuy-title: '&8Купить: %item%'
+plus-one: '&b+1'
+min-one: '&5-1'
+plus-sixteen: '&b+16'
+min-sixteen: '&5-16'
+plus-thirty-two: '&b+32'
+min-thirty-two: '&5-32'
+sell: '&aПродать?'
+sell-all: '&cПродать всё?'
+buy: '&aКупить?'
+buy-stacks: '&cКупить стаки?'
+transaction-screen-total-price: '&3%price%'
+transaction-screen-total-amount: '&5x %amount%'
+#All Inventory's
+back: '&4Назад'
+cancel: '&4Отмена'
+#Previous/Next/Current page
+previous-page: '&dПредыдущая страница'
+next-page: '&bСледующая страница'
+current-page: '&7Страница:'
+#ShopItem lore
+left-click-buy: '&aКупить за 1 шт.: &e%buyPrice%'
+right-click-sell: '&6Продать за 1 шт.: &e%sellPrice%'
+item-location-in-shop: '&8Раздел: %shopsection%, Каталог: %itemLoc%'
+item-cannot-be-bought: '&cПредмет не может быть куплен.'
+item-cannot-be-sold: '&cПредмет не может быть продан.'
+pay-confirmation: '&aВы купили &1%amount% x &b%material% &aза &c%amounttopay%'
+sell-confirmation: '&aВы продали &1%amount% x &b%material% &aза &c%amounttopay%'
+sell-confirmation-multiple-items: '&aВы продали &1%amount% &aпредметов за &c%amounttopay%'
+no-item-to-be-sold: '&cВ вашем инвентаре нет таких предметов.'
+player-made-transaction: '%playername% %bought/sold% %amount% x %material% за %amountofmoney% через %buy/sell-method%.'
+buy-screen: купить через меню
+sell-screen: продать через меню
+buystacks-screen: купить стаки через меню
+sellall-screen: продать всё через меню
+sellall-command: продать всё команда
+sellgui-screen: меню продажи
+bought: куплено
+sold: продано
+#CurrencySymbol
+currencysymbol: $%price%
+#All commands
+command-disabled-in-world: '&cЭто команда отключена в мире.'
+#Edit-shop subcommand descriptions
+editshop-add-item-subcommand-desc: '&aДобавить предмет в магазин.'
+editshop-edit-item-subcommand-desc: '&aРедактировать существующий предмет в магазине.'
+editshop-remove-item-subcommand-desc: '&aУдалить предмет из магазина.'
+editshop-import-subcommand-desc: '&aИмпортирует файлы/настройки из другого места или плагина.'
+editshop-add-hand-item-subcommand-desc: '&aДобавить предмет из руки.'
+editshop-add-section-subcommand-desc: '&aДобавить раздел в магазин.'
+editshop-edit-section-subcommand-desc: '&aРедактировать раздел магазина.'
+editshop-remove-section-subcommand-desc: '&aУдалить раздел из магазина.'
+#Edit-shop subcommand syntaxes
+editshop-add-item-subcommand-syntax: '&a/editshop additem <секция> <материал> <цена покупки> <цена продажи> [название]'
+editshop-edit-item-subcommand-syntax: '&a/editshop edititem <секция> <предмет> <действие> <ключ> <число>'
+editshop-remove-item-subcommand-syntax: '&a/editshop deleteitem <секция> <предмет>'
+editshop-import-subcommand-syntax: '&a/editshop import <плагин> <файл>'
+editshop-add-hand-item-subcommand-syntax: '&a/editshop addhanditem <секция> <цена покупки> <цена продажи>'
+editshop-edit-section-subcommand-syntax: '&a/editshop editsection <раздел> <действие> <ключ> <значение>'
+editshop-remove-section-subcommand-syntax: '&a/editshop deletesection <раздел>'
+#Edit-shop command messages
+editshop-adding-item: '&aДобавляем новый предмет в shops.yml...'
+editshop-add-item-successful: '&aУспешно добавлен предмет - ''%itemPath%''.'
+editshop-adding-section: '&aДобавляем новый раздел в sections.yml...'
+editshop-add-section-successful: '&aРаздел был успешно добавлен по пути ''%itemPath%''.'
+editshop-editing-item: '&aОбновление предмета...'
+editshop-edit-item-successful: '&aУспешно обновлено - ''%itemPath%''.'
+editshop-editing-section: '&aОбновляем раздел...'
+editshop-removing-item: '&aУдаление предмета из магазина...'
+editshop-remove-item-successful: '&aУспешно удалено - ''%itemPath%'' из магазина.'
+editshop-removing-section: '&aУдаляем раздел из магазина...'
+editshop-removed-section: '&a&aУспешно удален раздел ''%itemPath%'' из магазина.'
+editshop-reload-shop-to-see-changes: '&aИспользуй команду /sreload чтобы обновить.'
+file-replaced: '&aФайл %fileName% был заменен на новый, вы можете найти старый файл в папке backups.'
+#Edit-shop command errors
+section-does-not-contain-item: '&cСекция ''%shopsection%'' не содержит предмета ''%itemLoc%''.'
+no-valid-action: '&cНедействительное действие ''%action%''. \nДоступные действия: %actions%.'
+no-valid-key: '&cНедействительный ''%key%''. \nДоступные ключи: %keys%.'
+action-not-valid-on-key: '&cНевозможно для %action% использовать ''%key%'' ключ.'
+edit-item-material-invalid: '&cМатериал предмета недействительный. ''%material%'''
+key-already-defined: '&cКлюч ''%key%'' уже существует в магазине, вы не можете добавить его дважды.'
+key-is-not-found: '&cКлюч ''%key%''нельзя удалить из магазина, потому что он не найден.'
+plugin-not-found: '&cНе удалось найти плагин с таким именем, убедитесь что этот плагин поддерживается.'
+file-not-found: '&cНе удается найти файл с именем %fileName% внутри папки плагина %pluginName%.'
+no-valid-slot-for-item: '&cПредмет не может быть помещен в слот ''%slot%''. Слот должен быть 1 - %maxShopSize%.'
+slot-already-in-use: '&cМесто для этого раздела уже занято.\nВсе доступные слоты: %available-slots%'
+slot-needs-to-be-number: '&cСлот для элемента в главном меню должен быть числом.'
+#Reload Command
+configs-reloaded: '&aВсе конфигурации перезагружены.'
+#Sellall command usages
+sellall-command-usages: '&aИспользование команд(ы):'
+sellall-inventory-command-usage: '&7/sellall inventory &f- &7Продает все предметы в вашем инвентаре'
+sellall-hand-command-usage: '&7/sellall hand &8[amount] &f - &7Продать все предметы в твоей руке'
+sellall-item-command-usage: '&7/sellall <item> &8[amount] &f- &7Продает все товары в вашем инвентаре, соответствующие данному названию товара'
+#Balance Command
+check-balance: '&bУ вас имеется баланса &c%amountofmoney%&b.'
+check-balance-other-player: '&aУ &b%playername% &aимеется &c%amountofmoney%&a.'
+#Givemoney Command
+givemoneycommand-example: '&9/givemoney <игрок> <количество>'
+givemoney-complete: '&aУспешно выданы деньги.'
+#Pay Command
+minimum-amount: '&cМинимальная сумма для выплаты игроку составляет %minimumamount%.'
+payment-complete: '&aВыплата успешна.'
+player-received-money: '&aВы получили &c%amounttogive% &aот &2%playername%&a!'
+need-player-and-amount: '&9Вам нужно указать игрока и сумму.'
+need-amount: '&9Вам нужно выбрать количество.'
+paycommand-example: '&9/pay <игрок> <количество>'
+#Player breaks spawner
+default-spawner-name: '&9&l%spawner-type% &rспавнер'
+spawner-broke-and-applied-to-inventory: '&aВы добыли &9%spawner-type%&a, он был добавлен в ваш инвентарь.'
+need-silk-touch: '&cВам нужно использовать шёлковое касание для этого!'
+#JoinMessage
+join-message: '&2Добро пожаловать, твой баланс &c%balance%!'
+#Level event
+level-event-message: '&2[Уровни] &c%amount% &5было добавлено на ваш баланс!'
+#Item error's
+displayname-null: Пустое название.
+item-name-null: Не удалось получить название предмета.
+need-item-material: Нужен материал.
+item-material-null: Не удалось получить материал предмета. Если вы считаете, что это ошибка, сообщите об этом на наш сервер поддержки Discord, который вы можете найти на странице плагина. %material%
+item-enchantment-null: Не удалось узнать зачаровние.
+need-item-enchantment: Невозможно создать чары с пустым значением.
+item-enchantment-not-supported: Эти чары не поддерживаются в этой версии minecraft.
+enchantment-cannot-apply-to-item: Чтобы наложить чары на предмет, материал должен быть книгой чар или инструментом, подходящим для чар.
+item-spawnertype-null: Не удалось получить тип спавнера.
+need-item-spawnertype: Невозможно создать спаунер с пустым типов спаунера.
+material-needs-to-be-spawner: Чтобы применить к элементу Spawner-Type (Entity-Type), материал предмета должен быть спавнером.
+item-potiontype-null: Не удалось получить типа зелья.
+need-item-potiontype: Невозможно создать тип зелья с пустым значением.
+potiontype-not-supported: Этот тип зелья не поддерживается в этой версии Minecraft
+material-needs-to-be-potion: Чтобы применить эффект зелья, материал должен быть разновидностью зелья или стрелой.
+cant-bind-multiple-applyments: Невозможно создать предмет с несколькими применениями, такими как типы чар/спаунеров или эффектов зелий.
+item-error: '&cОшибка предмета, посмотрите в консоли.'
+material-not-supported: Этот материал предмета не поддерживается в этой версии Minecraft.
+item-needs-buy-and-sell-value: У каждого предмета в магазине должна быть цена покупки/продажи.
+sell-value-wrong: Стоимость продажи должна быть десятичной или числовой.
+buy-value-wrong: Стоимость покупки должна быть десятичной или числовой.
+option-type-changed: Измените опцию «type» на опцию «spawnertype», чтобы создать спаунер в магазине. Название опции было изменено в версии 2.2 для ясности.
+option-meta-changed: Измените опцию «meta» на опцию «displayname», чтобы создать товар с отображаемым именем в магазине. Название опции было изменено в версии 2.2 для ясности.
+cannot-display-shopsection: Невозможно создать раздел магазина '%shopsection%', потому что место товара должно находиться в диапазоне от 0 - %maxInvSize%.
+need-recipe-material: Невозможно создать материал рецепта с пустым значением.
+cannot-get-recipe-material: Невозможно создать рецепт материала, проверьте название материала на наличие орфографических ошибок и наличие.
+recipe-material-not-supported: Данный материал рецепта не поддерживается в этой версии Minecraft.
+material-needs-to-be-book: Чтобы применить рецепт к предмету, материал предмета должен быть книгой крафтов.
+need-skullowner: Невозможно создать голову игрока без указанного игрока (владельца черепа).
+material-needs-to-be-skull: Чтобы применить текстуру черепа (владелец черепа) к предмету, материал предмета должен быть головой игрока.
+material-needs-to-be-leather-armor: Чтобы применить цвет к части брони, материалом должна быть кожаная броня.
+#Item path
+items-path-in-shops-config: 'Путь к предмету в shops.yml: %location%'
+items-path-in-sections-config: 'Путь к предмету в sections.yml: %location%'
+items-path-in-config: 'Путь к предмету в config.yml: %location%'
+rosestacker-compatibility-enabled: Поставщик спавнера установлен в RoseStacker в конфигурации
+rosestacker-not-found: RoseStacker не был найден
+could-not-integrate-with-rosestacker: Не удалось интегрироваться с RoseStacker
+rosestacker-found: RoseStacker найден, интегрируется...
+using-rosestacker-spawners: Использование RoseStacker в качестве поставщика спавнера...
+ultimatestacker-compatibility-enabled: Поставщик Spawner установлен на UltimateStacker в конфигурации
+ultimatestacker-not-found: UltimateStacker не найден
+could-not-integrate-with-ultimatestacker: Не удалось интегрироваться с UltimateStacker
+ultimatestacker-found: UltimateStacker найден, интегрирует...
+using-ultimatestacker-spawners: Использование UltimateStacker в качестве поставщика спаунеров...
+spawner-compatibility-enabled: Плагин спавнера установлен на %provider% в config.
+spawner-provider-not-found: '%provider% не был найден.'
+spawner-provider-found: '%provider% найден, интегрирую..'
+failed-spawner-provider-integration: Не удалось интегрироваться с %provider%.
+using-external-spawners: Использование %provider% в качестве плагина спавнера.
+silkspawners-compatibility-enabled: SilkSpawners совместимость была включена в config.
+silkspawners-not-found: SilkSpawners не был найден
+silkspawners-found: SilkSpawners найден, интегрирую...
+could-not-integrate-with-silkspawners: Не удалось интегрироваться с плагином SilkSpawners.
+using-silkspawners-spawners: Использование плагина SilkSpawners для спавнеров...
+using-default-spawners: Использование обычных спавнеров...
+#Error's
+cannot-find-discounted-section: Невозможно добавить скидки для раздела '%section%', либо раздел магазина отключен, либо не найден.
+cannot-find-discounted-group: Невозможно добавить скидки для группы разрешений '%permsGroup%', проверьте орфографию и существует ли она в вашем плагине разрешений.
+disabling-plugin: Выключение плагина...
+not-spawn-able: Этот тип сущности не может быть создан. '%spawnertype%'
+real-player: Чтобы использовать эту команду, нужно быть игроком.
+player-not-online: '&cЭтот игрок не существует или не онлайн.'
+cannot-sell-air: '&cВы не можете продать воздух..'
+no-permissions: '&cУ вас нет прав!'
+no-permissions-to-open-shop: '&cУ вас нет прав.'
+cannot-do-that: '&4Вы не можете делать это!!'
+more-space-needed: '&cОсвободите место в инвентаре и попробуйте еще раз.'
+could-not-store-all-items: '&c%amount% предмет(ов) не может быть добавлен в ваш инвентарь, потому что он заполнен.'
+not-enough-space-inside-inventory: '&4У вас недостаточно места в инвентаре, оставшиеся предметы выпали на землю.'
+insufficient-money: '&cУ вас недостаточно денег.'
+canceling-transaction-no-space: '&4У вас недостаточно места в инвентаре, транзакция отменяется. \nПожалуйста, освободите больше места в вашем инвентаре и попробуйте еще раз.'
+no-items-in-section: Не удается открыть раздел магазина %shopsection%, потому что ничего не найдено!
+no-item-found: '&cПредмет(ы) не найден(ы).'
+item-null: '&cПредмет не существует.'
+item-cannot-be-sold-to-server: '&cПредмет (%material%) нельзя продать серверу, потому что предмет имеет ошибку внутри магазина. Пожалуйста сообщите об этой проблеме администраторам сервера или владельцу.'
+could-not-save-shops,yml: '&4Не удалось сохранить shops.yml.'
+could-not-save-sections,yml: '&4Не удалось сохранить sections.yml.'
+could-not-save-config: Не удалось сохранить конфигурацию %fileName%.
+rgb-color-formatted-wrong: 'Цвета RGB должны быть отформатированы как: ''0x000000'', ''000000'' или ''000000'' в %path%.'
+no-shop-found: '&cНе могу найти раздел магазина с таким названием!'
+no-valid-amount: '&cНедействительная число'
+restart-plugin: Не удается открыть раздел магазина, попробуйте перезапустить плагин или присоединиться к серверу Discord для получения поддержки.
+could-not-check-for-updates: '&cНе удалось проверить наличие обновлений.'
+cannot-update-config: '&cНе удается обновить файл конфигурации config.yml.'
+cannot-read-config: Невозможно прочитать конфигурацию %fileName%, потому что она неправильно настроена, используйте онлайн-анализатор Yaml с ошибкой внизу, чтобы выяснить причину проблемы и решить ее. Если вы не можете найти причину самостоятельно, присоединяйтесь к нашему серверу поддержки Discord, который можно найти на странице плагинов EconomyShopGUI.
+error-occured-while-reloading: '&4Произошла ошибка при перезагрузке плагина, пожалуйста, загляните в консоль, чтобы увидеть сообщение об ошибке.'
+could-not-get-the-limitedstock-mode: 'Не удалось получить режим ограниченного запаса: %limitedStockMode%'
+error-occurred-while-connecting-to-database: При попытке подключения к базе данных произошла ошибка
+creating-latest-shops: 'Создаётся стандартный магазин: не найден шаблон для версии %version%.'
+default-shops-created: Шаблон магазина для %version% создан в %path%
+loaded-shop-configurations: 'Загружено магазинов из /shops/: %total%'
+default-sections-created: Стандартные категории созданы в %path%
+loaded-section-configurations: 'Загружено категорий из /sections/: %total%'
+creating-new-shop-config: 'Создаётся файл магазина %section%: найдена категория без товаров.'
+creating-new-section-config: 'Создаётся категория %section%: найден магазин без категории.'
+cannot-hook-permissions: Не найден поддерживаемый плагин прав.
+enabled-plugin-hook: Включена интеграция с %plugin%.
+failed-plugin-integration: 'Не удалось подключиться к %plugin%: плагин отсутствует или выключен.'
+loading-season-modifiers: Загрузка сезонных коэффициентов цен...
+loaded-season-modifiers: 'Загружено коэффициентов: %total%, сезон %season%, мир %world%.'
+no-season-modifiers-found: В настройках нет коэффициентов для сезона %season%.
+season-change: В мире %world% сменился сезон. Загружаются цены для сезона %season%.
+economy-providers-loaded: 'Загружено провайдеров экономики: %total%, категорий: %shops%.'
+section-economy-provider-loaded: Экономика %economy% используется в магазине %shop%.
+loaded-shop-stand-module: 'Из stands.json загружено торговых стоек: %count%.'
+saving-shop-stands: 'Сохранение торговых стоек в stands.json: %count%.'
+loading-language-files: Загрузка переводов из LanguageFiles...
+failed-to-load-language-file: Не удалось загрузить перевод %fileName%, файл пропущен.
+failed-to-get-locale: Не удалось определить язык файла %fileName%, файл пропущен.
+loaded-language-files: 'Загружено языковых файлов: %amount%.'
+failed-to-load-language-files: Не найдена папка LanguageFiles для персонального перевода.
+error-loading-bedrock-icons: 'Не удалось загрузить значки Bedrock: %reason%'
+cannot-get-geyser-palette: Не удалось получить палитру Geyser. Значки Bedrock не загрузятся.
+successfully-loaded-bedrock-icons: 'Загружено значков Bedrock: %amount%.'
+loading-item-ids-from-geyser: Загрузка идентификаторов Bedrock из Geyser %instanceVersion%...
+error-loading-enchantment-costs: Не удалось прочитать стоимость зачарований из enchant-costs.yml.
+enchantment-costs-loaded: 'Из enchant-costs.yml загружено цен зачарований: %amount%.'
+shop-prefix: '&6Магазин &8» '
+max-amount-reached: '&cДостигнуто максимальное количество'
+min-amount-reached: '&cДостигнуто минимальное количество'
+selected-amount: '&aКоличество'
+shopstand-buy-screen-title: '&8Покупка &a» &8%item%'
+shopstand-sell-screen-title: '&8Продажа &c» &8%item%'
+shopstand-click-to-buy: '&aКупить: %amount% шт.'
+shopstand-click-to-sell: '&aПродать: %amount% шт.'
+shopstand-total-price: '&cИтого: &7%price%'
+default-shop-stand-item-name: '&eТорговая стойка'
+default-shop-stand-item-lore: '&fУстановите этот предмет, чтобы создать\n&6торговую стойку &fдля товара &c%item%'
+shop-stands-management-inventory-title: '&8Управление стойкой'
+shop-stand-info-item-name: '&6Информация о стойке'
+shop-stand-info-item-lore: '&aID: &f%id%\n&aМесто: &f%location%\n&aТовар: &f%item%\n&aТип: &f%type%\n&aЗагружена: &f%loaded%'
+force-reload-stand-item-name: '&eПерезагрузить стойку'
+force-reload-stand-item-lore: '&fНажмите, чтобы заново создать стойку и её предмет.'
+destroy-stand-item-name: '&4Удалить торговую стойку'
+destroy-stand-item-lore: '&eНажмите, чтобы удалить эту стойку.'
+reload-shop-stand: '&aТорговая стойка %id% перезагружена.'
+shop-stand-browse-inventory-title: '&8Список торговых стоек'
+shop-stand-location-format: Мир %world%, X %pos_x%, Y %pos_y%, Z %pos_z%
+created-new-shop-stand: '&aСоздана торговая стойка для &f%item%&a.'
+error-creating-new-shop-stand: '&cНе удалось создать стойку: %reason%'
+seasonal-buy-price: \n &aЦена покупки\n &f&m%buyPrice%&r &f%seasonalBuyPrice%
+discounted-buy-price: \n &aЦена покупки\n &f&m%buyPrice%&r &f%discountedPrice%
+seasonal-sell-price: \n &cЦена продажи\n &f&m%sellPrice%&r &f%seasonalSellPrice%
+multiplied-sell-price: \n &cЦена продажи\n &f&m%sellPrice%&r &f%multipliedPrice%
+shift-right-click-sell-all: '&bShift + ПКМ: продать все такие предметы'
+item-seasonal-price: '&eСезонная цена %season-icon%'
+decoration-lore: '\n &eУправление:'
+decoration-lore-buy: '&fЛКМ — выбрать количество для покупки'
+decoration-lore-sell-all: '&fShift + ПКМ — продать все такие предметы'
+decoration-lore-sell: '&fПКМ — выбрать количество для продажи'
+decoration-lore-view: '&fНажмите, чтобы посмотреть'
+time-requirement-lore: '&cДоступно только с %minTime% до %maxTime% игрового времени.'
+quest-requirement-lore: '&cСначала завершите задание &b%questName%&c.'
+region-requirement-lore: '&cДоступно только в регионе &b%regionName%&c.'
+discord-srv-player-transaction: '%player_name% %bought/sold% %amount% x %items% за %price%'
+cannot-purchase-item: '&cЭтот предмет нельзя купить.'
+cannot-sell-item: '&cЭтот предмет нельзя продать.'
+player-made-transaction-multiple-items: '%playername% %bought/sold% %items% за %amountofmoney% через %buy/sell-method%.'
+time-requirement-not-met: '&cТорговля доступна с %minTime% до %maxTime%. Сейчас %progress% игрового времени.'
+quest-requirement-not-met: '&cДля торговли завершите задание &b%questName%&c.'
+region-requirement-not-met: '&cТорговля этим предметом доступна только в регионе %regionName%.'
+quick-buy: быстрая покупка
+quick-sell: быстрая продажа
+shopstand-buy-screen: покупка через стойку
+shopstand-sell-screen: продажа через стойку
+auto-sell-chest: сундук продажи
+on-screen-title-sold: '&a+%price%'
+on-screen-title-bought: '&c-%price%'
+symbol-pricing-format: '%symbol%%price%'
+named-pricing-format: '%price% &l%currency-format%'
+xp-currency-name-singular: очко опыта
+xp-currency-name-plural: очков опыта
+editshop-migrate-subcommand-desc: '&aПеренести данные из другого плагина или файла.'
+editshop-shopstands-subcommand-desc: '&aСоздание торговых стоек и управление ими.'
+editshop-shopstands-give-subcommand-desc: '&aПолучить предмет торговой стойки.'
+editshop-shopstands-destroy-subcommand-desc: '&aУдалить стойку по её ID.'
+editshop-shopstands-browse-subcommand-desc: '&aОткрыть список торговых стоек.'
+editshop-add-section-subcommand-syntax: '&a/editshop addsection <категория> <материал> <название> <слот>'
+editshop-migrate-subcommand-syntax: '&a/editshop migrate <плагин> <файл> [флаги]'
+editshop-shopstands-subcommand-syntax: '&a/editshop shopstands <give/destroy> ...'
+editshop-shopstands-give-subcommand-syntax: '&a/editshop shopstands give <тип> <категория> <индекс>'
+editshop-shopstands-destroy-subcommand-syntax: '&a/eshop shopstands destroy <ID>'
+editshop-shopstands-browse-subcommand-syntax: '&a/eshop shopstands browse'
+shop-stand-item-received: '&aВы получили &c%amount% &aторговых стоек для &f%item%&a.'
+invalid-shop-stand-type: '&cНеизвестный тип стойки. Допустимые значения: %values%'
+unknown-shop-stand-id: '&cТорговая стойка с ID &f%id% &cне найдена.'
+stand-type-not-supported: '&cТип стойки &f%type% &cне поддерживается этой версией Minecraft.'
+shop-item-given: '&aВыдано &c%amount% &aшт. &6%material%&a.'
+shop-item-received: '&aПолучено &c%amount% &aшт. товара &6%itemIndex% &aиз категории &6%section%&a.'
+invalid-item-requirement-type: 'Неизвестный тип требования: %type%'
+invalid-item-requirement: 'Некорректное требование к товару: %requirement%'
+invalid-spawn-potential-weight: Вес варианта спавна должен быть числом.
+invalid-spawn-potential: 'Некорректный вариант спавна %spawn_potential%. Формат: <тип сущности>:<вес>.'
+invalid-material-for-item-option: Для параметра %item-option% нужен материал %material%.
+invalid-ominous-bottle-strength: 'Сила зловещей бутылочки должна быть от 1 до 5. Получено: %strength%'
+error-setting-item-option: 'Ошибка установки параметра %item-option%:'
+mineablespawners-compatibility-enabled: В настройках выбран провайдер спавнеров MineableSpawners.
+mineablespawners-found: Найден MineableSpawners. Подключение...
+mineablespawners-not-found: MineableSpawners не найден.
+could-not-intergrate-with-mineablespawners: Не удалось подключить MineableSpawners.
+using-mineablespawners-spawners: Спавнеры обслуживает MineableSpawners.
+wildstacker-compatibility-enabled: В настройках выбран провайдер спавнеров WildStacker.
+wildstacker-not-found: WildStacker не найден.
+wildstacker-found: Найден WildStacker. Подключение...
+could-not-integrate-with-wildstacker: Не удалось подключить WildStacker.
+using-wildstacker-spawners: Спавнеры обслуживает WildStacker.
+not-enough-items-to-sell: '&cНужно продать не менее %min-sell% шт. У вас: %quantity%.'
+invalid-item-type: '&cНекорректный тип предмета: %type%'
+cannot-enter-shop-banned-gamemode: '&cТорговля недоступна в режиме %gamemode%.'
+cannot-use-command-banned-gamemode: '&cЭта команда недоступна в режиме %gamemode%.'
+cannot-load-season-modifier: Для коэффициента %path% не найден соответствующий товар или категория.
+invalid-season-modifier: 'Некорректный коэффициент %path%: ожидается процент от -100 до 100, получено %current%.'
+cannot-load-economy-provider: 'Не удалось подключить экономику магазина %shop%: %reason%. Используется общая экономика.'
+cannot-find-economy-provider: Не найдена экономика %type% для магазина %shop%. Используется общая экономика.
+cannot-find-default-economy-provider: Экономика %economy% не найдена. Поиск поддерживаемого провайдера...
+cannot-load-default-economy-provider: 'Не удалось загрузить общую экономику: %reason%. Поиск другого провайдера...'
+removed-shop-stand: '&cТорговая стойка в %location% удалена.'
+shop-stand-load-failed: 'Не удалось загрузить стойку %id%: %reason%'
+shop-stand-unload-failed: 'Не удалось выгрузить стойку %id%: %reason%'
+shop-stand-inside-unloaded-chunk: Торговая стойка находится в незагруженном чанке.
+item-from-shop-stand-not-found: 'Не найден товар торговой стойки: %item%'
+block-from-shop-stand-not-found: Блок стойки в %location% не совпадает с сохранённым типом %type%.
+invalid-shop-stand-world: Мир %world% для стойки %id% не существует.
+invalid-shop-stand-format: Некорректные координаты X %pos_x%, Y %pos_y%, Z %pos_z% у стойки %id%.
+error-saving-shop-stands: Не удалось сохранить торговые стойки в stands.json.
+error-loading-shop-stands: Не удалось загрузить торговые стойки из stands.json.
+error-loading-shop-stand: 'Не удалось загрузить стойку %stand% из stands.json: %reason%'
+error-creating-stands-storage: Не удалось создать файл stands.json.
+invalid-stand-type: 'Неизвестный тип торговой стойки: %type%'
+shop-stands-module-not-enabled: Модуль торговых стоек выключен.
+cannot-open-shop-stand: 'Не удалось открыть стойку игроку %player%: товар %item% не существует.'
+invalid-click-type: Неизвестный тип нажатия %click-type% в %click-mapping%. Используется стандартный.
+invalid-click-action: Неизвестное действие %click-action% в %click-mapping%. Используется стандартное.

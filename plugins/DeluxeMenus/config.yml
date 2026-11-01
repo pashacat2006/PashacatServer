@@ -15,3 +15,5 @@ gui_menus:
     file: advanced_menu.yml
   requirements_menu:
     file: requirements_menu.yml
+  Title:
+    file: title.yml

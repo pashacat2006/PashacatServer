@@ -250,7 +250,7 @@ format:
     enable: true
     # https://flectone.net/pulse/docs/message/format/moderation/caps
     caps:
-      enable: false
+      enable: true
       violation_limit: 5
       violation_reset_time: 200
       trigger: 0.7
@@ -265,15 +265,15 @@ format:
       timeout: 72000
     # https://flectone.net/pulse/docs/message/format/moderation/flood
     flood:
-      enable: false
+      enable: true
       trim_to_single: false
       violation_limit: 5
       violation_reset_time: 200
-      max_repeated_symbols: 10
+      max_repeated_symbols: 5
       max_repeated_words: 2
     # https://flectone.net/pulse/docs/message/format/moderation/swear
     swear:
-      enable: false
+      enable: true
       violation_limit: 5
       violation_reset_time: 200
       ignore:

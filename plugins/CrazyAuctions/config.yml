@@ -1,0 +1,307 @@
+# Русский перевод CrazyAuctions 1.7.0 для Folia 1.21.4.
+Settings:
+  Prefix: '&7[&6Аукцион&7]: '
+  GUIName: '&6Аукцион&8'
+  Players-Current-Items: '&8Ваши объявления'
+  Cancelled/Expired-Items: '&8Возврат предметов'
+  Buying-Item: '&8Подтвердите покупку'
+  Bidding-On-Item: '&8Ставка на предмет'
+  Categories: '&8Категории'
+  Sell-Time: 2d
+  Bid-Time: 2m 30s
+  Full-Expire-Time: 10d
+  Bid-Winner-Time: 20d
+  Minimum-Sell-Price: 10
+  Max-Beginning-Sell-Price: 1000000
+  Minimum-Bid-Price: 100
+  Max-Beginning-Bid-Price: 1000000
+  Allow-Damaged-Items: false
+  Category-Page-Opens-First: false
+  Feature-Toggle:
+    Selling: true
+    Bidding: true
+  Patches:
+    Macro-Dupe: true
+  Sounds:
+    Toggle: false
+    Sound: 'UI_BUTTON_CLICK'
+  Sold-Item-Sound: 'UI_BUTTON_CLICK'
+
+  GUISettings:
+    SellingItemLore:
+      - '&7-------------------------'
+      - '&aНажмите, чтобы купить.'
+      - ''
+      - '&9Цена: &e$%price%'
+      - '&9Продавец: &e%seller%'
+      - '&7-------------------------'
+    CurrentLore:
+      - '&7-------------------------'
+      - '&aНажмите, чтобы снять с продажи.'
+      - ''
+      - '&9Цена: &e$%price%'
+      - '&9До снятия с продажи: &e%time%'
+      - '&7-------------------------'
+    Cancelled/ExpiredLore:
+      - '&7-------------------------'
+      - '&aНажмите, чтобы забрать предмет.'
+      - ''
+      - '&9До удаления: &e%time%'
+      - '&7-------------------------'
+    Bidding:
+      - '&7-------------------------'
+      - '&aНажмите, чтобы сделать ставку.'
+      - ''
+      - '&9Продавец: &e%seller%'
+      - '&9Текущая ставка: &e$%topbid%'
+      - '&9Лидер торгов: &e%topbidder%'
+      - '&9Осталось: &e%time%'
+      - '&7-------------------------'
+    Category-Settings:
+      Armor:
+        Item: 'GOLDEN_CHESTPLATE'
+        Toggle: true
+        Slot: 11
+        Name: '&6&lБроня'
+        Lore:
+          - '&7В этой категории отображаются'
+          - '&7все доспехи, выставленные на продажу.'
+      Weapons:
+        Item: 'GOLDEN_SWORD'
+        Toggle: true
+        Slot: 12
+        Name: '&6&lОружие'
+        Lore:
+          - '&7В этой категории отображаются'
+          - '&7всё оружие, выставленное на продажу.'
+      Tools:
+        Item: 'GOLDEN_PICKAXE'
+        Toggle: true
+        Slot: 13
+        Name: '&6&lИнструменты'
+        Lore:
+          - '&7В этой категории отображаются'
+          - '&7все инструменты, выставленные на продажу.'
+      Food:
+        Item: 'GOLDEN_APPLE'
+        Toggle: true
+        Slot: 14
+        Name: '&6&lЕда'
+        Lore:
+          - '&7В этой категории отображаются'
+          - '&7вся еда, выставленная на продажу.'
+      Potions:
+        Item: 'POTION'
+        Toggle: true
+        Slot: 15
+        Name: '&6&lЗелья'
+        Lore:
+          - '&7В этой категории отображаются'
+          - '&7все зелья, выставленные на продажу.'
+      Blocks:
+        Item: 'GRASS_BLOCK'
+        Toggle: true
+        Slot: 16
+        Name: '&6&lБлоки'
+        Lore:
+          - '&7В этой категории отображаются'
+          - '&7все блоки, выставленные на продажу.'
+      Other:
+        Item: 'GOLD_NUGGET'
+        Toggle: true
+        Slot: 17
+        Name: '&6&lПрочее'
+        Lore:
+          - '&7В этой категории отображаются'
+          - '&7все остальные предметы в продаже.'
+      None:
+        Item: 'BARRIER'
+        Toggle: true
+        Slot: 23
+        Name: '&6&lВсе предметы'
+        Lore:
+          - '&7В этой категории отображаются'
+          - '&7все предметы, выставленные на продажу.'
+    OtherSettings:
+      SellingItems:
+        Item: 'DIAMOND'
+        Toggle: true
+        Slot: 46
+        Name: '&6Ваши объявления'
+        Lore:
+          - '&aНажмите, чтобы посмотреть предметы,'
+          - '&aкоторые вы выставили на аукцион.'
+      Cancelled/ExpiredItems:
+        Item: 'POISONOUS_POTATO'
+        Toggle: true
+        Slot: 47
+        Name: '&6Забрать снятые с продажи предметы'
+        Lore:
+          - '&aНажмите, чтобы посмотреть и забрать'
+          - '&aпредметы, снятые с продажи.'
+      PreviousPage:
+        Item: 'PAPER'
+        Toggle: true
+        Slot: 49
+        Name: '&6Предыдущая страница'
+        Lore: { }
+      Refesh:
+        Item: 'SUNFLOWER'
+        Toggle: true
+        Slot: 50
+        Name: '&6Обновить страницу'
+        Lore: { }
+      NextPage:
+        Item: 'PAPER'
+        Toggle: true
+        Slot: 51
+        Name: '&6Следующая страница'
+        Lore: { }
+      Category1:
+        Item: 'CHEST'
+        Toggle: true
+        Slot: 52
+        Name: '&6Категории'
+        Lore:
+          - '&bТекущая категория: &6%category%'
+          - '&aИщете предметы определённого типа?'
+          - '&aНажмите, чтобы выбрать категорию.'
+      Category2:
+        Item: 'CHEST'
+        Toggle: true
+        Slot: 48
+        Name: '&6Категории'
+        Lore:
+          - '&bТекущая категория: &6%category%'
+          - '&aИщете предметы определённого типа?'
+          - '&aНажмите, чтобы выбрать категорию.'
+      Bidding/Selling:
+        Selling:
+          Item: 'SLIME_BALL'
+          Toggle: true
+          Slot: 53
+          Name: '&6Режим: покупка по фиксированной цене'
+          Lore:
+            - '&7&l(&6&l!&7&l) &7Нажмите, чтобы переключиться'
+            - '&7на предметы с торгами.'
+        Bidding:
+          Item: 'MAGMA_CREAM'
+          Toggle: true
+          Slot: 53
+          Name: '&6Режим: торги'
+          Lore:
+            - '&7&l(&6&l!&7&l) &7Нажмите, чтобы переключиться'
+            - '&7на покупку по фиксированной цене.'
+      WhatIsThis:
+        SellingShop:
+          Item: 'BOOK'
+          Toggle: true
+          Slot: 54
+          Name: '&6Как пользоваться?'
+          Lore:
+            - '&aЭто аукцион. Здесь можно выставлять'
+            - '&aпредметы на продажу и покупать то,'
+            - '&aчто выставили другие игроки.'
+            - ''
+            - '&aПродавайте полезные вещи другим'
+            - '&aигрокам и зарабатывайте деньги'
+            - '&aна своих находках и ресурсах.'
+        BiddingShop:
+          Item: 'BOOK'
+          Toggle: true
+          Slot: 54
+          Name: '&6Как пользоваться?'
+          Lore:
+            - '&aЭто аукцион. Здесь можно выставлять'
+            - '&aпредметы на торги и делать ставки на то,'
+            - '&aчто выставили другие игроки.'
+            - ''
+            - '&aЧтобы получить предмет, предложите'
+            - '&aлучшую цену. Победитель торгов сможет'
+            - '&aзабрать выигрыш в меню возврата.'
+        CurrentItems:
+          Item: 'BOOK'
+          Toggle: true
+          Slot: 54
+          Name: '&6Как пользоваться?'
+          Lore:
+            - '&aЗдесь показаны ваши объявления:'
+            - '&aвсе предметы, которые вы сейчас'
+            - '&aпродаёте на аукционе.'
+            - ''
+            - '&aЗдесь можно снять предмет с продажи'
+            - '&aи узнать, сколько времени осталось.'
+        Cancelled/ExpiredItems:
+          Item: 'BOOK'
+          Toggle: true
+          Slot: 54
+          Name: '&6Как пользоваться?'
+          Lore:
+            - '&aЗдесь хранятся ваши предметы, снятые'
+            - '&aс продажи, и непроданные лоты.'
+            - '&aПосле отмены или окончания продажи'
+            - '&aвы сможете забрать их из этого меню.'
+            - ''
+            - '&aНажмите на предмет, чтобы забрать его.'
+            - '&aВ инвентаре должно быть свободное место.'
+        Viewing:
+          Item: 'BOOK'
+          Toggle: true
+          Slot: 50
+          Name: '&6Как пользоваться?'
+          Lore:
+            - '&aЗдесь показаны все предметы,'
+            - '&aкоторые выбранный игрок выставил'
+            - '&aна продажу или на торги. Так проще'
+            - '&aнайти товары нужного продавца.'
+        Categories:
+          Item: 'BOOK'
+          Toggle: true
+          Slot: 54
+          Name: '&6Как пользоваться?'
+          Lore:
+            - '&aЗдесь можно выбрать категорию'
+            - '&aпредметов. Нажмите на категорию,'
+            - '&aчтобы увидеть только те товары,'
+            - '&aкоторые относятся к ней.'
+      Back:
+        Item: 'PAPER'
+        Slot: 46
+        Name: '&6Назад'
+      Return:
+        Item: 'FLOWER_POT'
+        Slot: 50
+        Name: '&6Забрать всё'
+        Lore:
+          - '&aНажмите, чтобы забрать все предметы,'
+          - '&aснятые с продажи, в ваш инвентарь.'
+      Confirm:
+        Item: 'LIME_STAINED_GLASS_PANE'
+        Name: '&aПодтвердить'
+      Cancel:
+        Item: 'RED_STAINED_GLASS_PANE'
+        Name: '&cОтмена'
+      Your-Item:
+        Item: 'BARRIER'
+        Name: '&cНельзя купить свой предмет.'
+      Cant-Afford:
+        Item: 'BARRIER'
+        Name: '&cНедостаточно денег для покупки.'
+      Top-Bidder:
+        Item: 'BARRIER'
+        Name: '&cВаша ставка уже лидирует.'
+      Bidding:
+        Item: 'BLACK_STAINED_GLASS_PANE'
+        Name: '&7Ваша ставка'
+        Lore:
+          - '&7<--&aПрибавить &cУбавить&7-->'
+          - '&9Ваша ставка: &e$%Bid%'
+          - '&9Лучшая ставка: &e$%topbid%'
+      Bid:
+        Item: 'LIGHT_BLUE_STAINED_GLASS_PANE'
+        Name: '&bСделать ставку'
+        Lore:
+          - '&7Нажмите, чтобы подтвердить ставку.'
+  BlackList:
+    - 'BEDROCK'
+    - 'END_PORTAL_FRAME'

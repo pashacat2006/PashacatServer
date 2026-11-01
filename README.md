@@ -27,3 +27,5 @@ git config filter.redact.required true
 
 1. Скачай Folia 1.21.4 и положи как `server.jar`.
 2. `java -jar server.jar` (нужна Java 21).
+3. Folia:https://fill-ui.papermc.io/projects/folia/version/1.21.4
+4. Jdk21:https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html

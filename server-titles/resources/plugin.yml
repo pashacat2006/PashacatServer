@@ -1,0 +1,17 @@
+name: ServerTitles
+version: 1.0.0
+main: dev.pashacat.titles.ServerTitles
+api-version: '1.21'
+folia-supported: true
+author: Pashacat
+description: Постоянные титулы за монеты, игровое время и PvP для DeluxeMenus.
+depend: [Vault, LuckPerms, PlaceholderAPI, DeluxeMenus]
+commands:
+  servertitles:
+    description: Выбрать или снять титул из меню.
+    usage: /servertitles select <id> или /servertitles clear
+permissions:
+  servertitles.use:
+    default: true
+  servertitles.admin:
+    default: op

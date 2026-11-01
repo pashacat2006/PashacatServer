@@ -1,0 +1,19 @@
+enable: true
+slot: 15
+title: "&8Магазин · Фермерство"
+hidden: false
+sub-section: false
+economy: VAULT
+fill-item:
+  material: GRAY_STAINED_GLASS_PANE
+  name: ' '
+nav-bar:
+  mode: INHERIT
+item:
+  material: WHEAT
+  name: "&e&lФермерство"
+  lore:
+    - "&7Товаров: &f14"
+    - '&aЛКМ по товару — купить'
+    - '&6ПКМ по товару — продать'
+    - '&7Нажмите, чтобы открыть'

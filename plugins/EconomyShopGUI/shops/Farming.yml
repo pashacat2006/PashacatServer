@@ -1,0 +1,88 @@
+pages:
+  page1:
+    gui-rows: 6
+    items:
+      '1':
+        material: WHEAT_SEEDS
+        displayname: "&fСемена пшеницы"
+        slot: 10
+        buy: 10
+        sell: 2
+      '2':
+        material: BEETROOT_SEEDS
+        displayname: "&fСемена свёклы"
+        slot: 11
+        buy: 10
+        sell: 1
+      '3':
+        material: WHEAT
+        displayname: "&fПшеница"
+        slot: 12
+        buy: 40
+        sell: 9
+      '4':
+        material: CARROT
+        displayname: "&fМорковь"
+        slot: 13
+        buy: 30
+        sell: 3
+      '5':
+        material: POTATO
+        displayname: "&fКартофель"
+        slot: 14
+        buy: 30
+        sell: 3
+      '6':
+        material: BEETROOT
+        displayname: "&fСвёкла"
+        slot: 15
+        buy: 30
+        sell: 3
+      '7':
+        material: SUGAR_CANE
+        displayname: "&fСахарный тростник"
+        slot: 16
+        buy: 60
+        sell: 10
+      '8':
+        material: CACTUS
+        displayname: "&fКактус"
+        slot: 19
+        buy: 80
+        sell: 8
+      '9':
+        material: PUMPKIN
+        displayname: "&fТыква"
+        slot: 20
+        buy: 200
+        sell: 40
+      '10':
+        material: MELON_SLICE
+        displayname: "&fЛомтик арбуза"
+        slot: 21
+        buy: 16
+        sell: 1
+      '11':
+        material: OAK_SAPLING
+        displayname: "&fСаженец дуба"
+        slot: 22
+        buy: 32
+        sell: 2
+      '12':
+        material: SPRUCE_SAPLING
+        displayname: "&fСаженец ели"
+        slot: 23
+        buy: 32
+        sell: 2
+      '13':
+        material: BONE_MEAL
+        displayname: "&fКостная мука"
+        slot: 24
+        buy: 20
+        sell: -1
+      '14':
+        material: NETHER_WART
+        displayname: "&fНарост Незера"
+        slot: 25
+        buy: 80
+        sell: 5

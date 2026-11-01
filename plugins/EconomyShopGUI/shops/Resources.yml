@@ -1,0 +1,76 @@
+pages:
+  page1:
+    gui-rows: 6
+    items:
+      '1':
+        material: COAL
+        displayname: "&fУголь"
+        slot: 10
+        buy: 80
+        sell: 15
+      '2':
+        material: CHARCOAL
+        displayname: "&fДревесный уголь"
+        slot: 11
+        buy: 40
+        sell: 8
+      '3':
+        material: IRON_INGOT
+        displayname: "&fЖелезный слиток"
+        slot: 12
+        buy: 180
+        sell: 22
+      '4':
+        material: GOLD_INGOT
+        displayname: "&fЗолотой слиток"
+        slot: 13
+        buy: 600
+        sell: 105
+      '5':
+        material: COPPER_INGOT
+        displayname: "&fМедный слиток"
+        slot: 14
+        buy: 60
+        sell: 4
+      '6':
+        material: DIAMOND
+        displayname: "&fАлмаз"
+        slot: 15
+        buy: 2400
+        sell: 200
+      '7':
+        material: EMERALD
+        displayname: "&fИзумруд"
+        slot: 16
+        buy: 1800
+        sell: 100
+      '8':
+        material: LAPIS_LAZULI
+        displayname: "&fЛазурит"
+        slot: 19
+        buy: 200
+        sell: 15
+      '9':
+        material: REDSTONE
+        displayname: "&fРедстоун"
+        slot: 20
+        buy: 120
+        sell: 32
+      '10':
+        material: QUARTZ
+        displayname: "&fНезер-кварц"
+        slot: 21
+        buy: 80
+        sell: 8
+      '11':
+        material: AMETHYST_SHARD
+        displayname: "&fОсколок аметиста"
+        slot: 22
+        buy: 60
+        sell: 4
+      '12':
+        material: GLOWSTONE_DUST
+        displayname: "&fСветокаменная пыль"
+        slot: 23
+        buy: 80
+        sell: 10

@@ -1,0 +1,19 @@
+enable: true
+slot: 29
+title: "&8Магазин · Еда"
+hidden: false
+sub-section: false
+economy: VAULT
+fill-item:
+  material: GRAY_STAINED_GLASS_PANE
+  name: ' '
+nav-bar:
+  mode: INHERIT
+item:
+  material: COOKED_BEEF
+  name: "&6&lЕда"
+  lore:
+    - "&7Товаров: &f10"
+    - '&aЛКМ по товару — купить'
+    - '&6ПКМ по товару — продать'
+    - '&7Нажмите, чтобы открыть'

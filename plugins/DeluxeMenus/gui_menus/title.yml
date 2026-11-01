@@ -1,0 +1,864 @@
+menu_title: "&8Титулы &7· &6Коллекция"
+open_command:
+  - "title"
+  - "titles"
+  - "titul"
+register_command: true
+size: 54
+update_interval: 1
+open_requirement:
+  requirements:
+    ready:
+      type: "string equals"
+      input: "%servertitles_ready%"
+      output: "yes"
+  deny_commands:
+    - "[message] &cТитулы ещё загружаются. Попробуйте позже."
+items:
+  money_header:
+    material: "GOLD_INGOT"
+    slot: 2
+    display_name: "&6&lЗа монеты"
+    lore:
+      - "&7Купите титул один раз."
+      - "&7Повторный выбор бесплатный."
+  time_header:
+    material: "CLOCK"
+    slot: 4
+    display_name: "&b&lЗа время"
+    lore:
+      - "&7Награда за общий стаж на сервере."
+      - "&7Игровое время не списывается."
+  kills_header:
+    material: "IRON_SWORD"
+    slot: 6
+    display_name: "&c&lЗа PvP"
+    lore:
+      - "&7Учитываются убийства игроков."
+      - "&7Убийства мобов не учитываются."
+      - "&7Статистика не списывается."
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+  money_trader_selected:
+    material: "LIME_STAINED_GLASS_PANE"
+    slot: 11
+    priority: 1
+    update: true
+    display_name: "&a✔ Торговец"
+    lore:
+      - ""
+      - "&7Цена открытия: &e5 000 монет"
+      - "&7Ваш баланс: &e%vault_eco_balance_formatted%"
+      - ""
+      - "&7В чате: &fНик &e[Торговец]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_money_trader%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    right_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    view_requirement:
+      requirements:
+        selected:
+          type: "string equals"
+          input: "%servertitles_selected_id%"
+          output: "money_trader"
+  money_trader:
+    material: "GOLD_INGOT"
+    slot: 11
+    priority: 2
+    update: true
+    display_name: "&eТорговец"
+    lore:
+      - ""
+      - "&7Цена открытия: &e5 000 монет"
+      - "&7Ваш баланс: &e%vault_eco_balance_formatted%"
+      - ""
+      - "&7В чате: &fНик &e[Торговец]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_money_trader%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[close]"
+      - "[player] servertitles select money_trader"
+    right_click_commands:
+      - "[close]"
+      - "[player] servertitles select money_trader"
+  money_rich_selected:
+    material: "LIME_STAINED_GLASS_PANE"
+    slot: 20
+    priority: 1
+    update: true
+    display_name: "&a✔ Богач"
+    lore:
+      - ""
+      - "&7Цена открытия: &e25 000 монет"
+      - "&7Ваш баланс: &e%vault_eco_balance_formatted%"
+      - ""
+      - "&7В чате: &fНик &6[Богач]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_money_rich%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    right_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    view_requirement:
+      requirements:
+        selected:
+          type: "string equals"
+          input: "%servertitles_selected_id%"
+          output: "money_rich"
+  money_rich:
+    material: "EMERALD"
+    slot: 20
+    priority: 2
+    update: true
+    display_name: "&6Богач"
+    lore:
+      - ""
+      - "&7Цена открытия: &e25 000 монет"
+      - "&7Ваш баланс: &e%vault_eco_balance_formatted%"
+      - ""
+      - "&7В чате: &fНик &6[Богач]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_money_rich%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[close]"
+      - "[player] servertitles select money_rich"
+    right_click_commands:
+      - "[close]"
+      - "[player] servertitles select money_rich"
+  money_magnate_selected:
+    material: "LIME_STAINED_GLASS_PANE"
+    slot: 29
+    priority: 1
+    update: true
+    display_name: "&a✔ Магнат"
+    lore:
+      - ""
+      - "&7Цена открытия: &e100 000 монет"
+      - "&7Ваш баланс: &e%vault_eco_balance_formatted%"
+      - ""
+      - "&7В чате: &fНик &6[Магнат]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_money_magnate%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    right_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    view_requirement:
+      requirements:
+        selected:
+          type: "string equals"
+          input: "%servertitles_selected_id%"
+          output: "money_magnate"
+  money_magnate:
+    material: "GOLD_BLOCK"
+    slot: 29
+    priority: 2
+    update: true
+    display_name: "&6Магнат"
+    lore:
+      - ""
+      - "&7Цена открытия: &e100 000 монет"
+      - "&7Ваш баланс: &e%vault_eco_balance_formatted%"
+      - ""
+      - "&7В чате: &fНик &6[Магнат]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_money_magnate%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[close]"
+      - "[player] servertitles select money_magnate"
+    right_click_commands:
+      - "[close]"
+      - "[player] servertitles select money_magnate"
+  money_aristocrat_selected:
+    material: "LIME_STAINED_GLASS_PANE"
+    slot: 38
+    priority: 1
+    update: true
+    display_name: "&a✔ Аристократ"
+    lore:
+      - ""
+      - "&7Цена открытия: &e250 000 монет"
+      - "&7Ваш баланс: &e%vault_eco_balance_formatted%"
+      - ""
+      - "&7В чате: &fНик &d[Аристократ]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_money_aristocrat%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    right_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    view_requirement:
+      requirements:
+        selected:
+          type: "string equals"
+          input: "%servertitles_selected_id%"
+          output: "money_aristocrat"
+  money_aristocrat:
+    material: "DIAMOND"
+    slot: 38
+    priority: 2
+    update: true
+    display_name: "&dАристократ"
+    lore:
+      - ""
+      - "&7Цена открытия: &e250 000 монет"
+      - "&7Ваш баланс: &e%vault_eco_balance_formatted%"
+      - ""
+      - "&7В чате: &fНик &d[Аристократ]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_money_aristocrat%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[close]"
+      - "[player] servertitles select money_aristocrat"
+    right_click_commands:
+      - "[close]"
+      - "[player] servertitles select money_aristocrat"
+  money_emperor_selected:
+    material: "LIME_STAINED_GLASS_PANE"
+    slot: 47
+    priority: 1
+    update: true
+    display_name: "&a✔ Император"
+    lore:
+      - ""
+      - "&7Цена открытия: &e1 000 000 монет"
+      - "&7Ваш баланс: &e%vault_eco_balance_formatted%"
+      - ""
+      - "&7В чате: &fНик &6&l[Император]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_money_emperor%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    right_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    view_requirement:
+      requirements:
+        selected:
+          type: "string equals"
+          input: "%servertitles_selected_id%"
+          output: "money_emperor"
+  money_emperor:
+    material: "NETHER_STAR"
+    slot: 47
+    priority: 2
+    update: true
+    display_name: "&6&lИмператор"
+    lore:
+      - ""
+      - "&7Цена открытия: &e1 000 000 монет"
+      - "&7Ваш баланс: &e%vault_eco_balance_formatted%"
+      - ""
+      - "&7В чате: &fНик &6&l[Император]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_money_emperor%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[close]"
+      - "[player] servertitles select money_emperor"
+    right_click_commands:
+      - "[close]"
+      - "[player] servertitles select money_emperor"
+  time_observer_selected:
+    material: "LIME_STAINED_GLASS_PANE"
+    slot: 13
+    priority: 1
+    update: true
+    display_name: "&a✔ Наблюдатель"
+    lore:
+      - ""
+      - "&7Нужно наиграть: &b1 ч."
+      - "&7Ваш стаж: &b%servertitles_playtime%"
+      - ""
+      - "&7В чате: &fНик &a[Наблюдатель]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_time_observer%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    right_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    view_requirement:
+      requirements:
+        selected:
+          type: "string equals"
+          input: "%servertitles_selected_id%"
+          output: "time_observer"
+  time_observer:
+    material: "CLOCK"
+    slot: 13
+    priority: 2
+    update: true
+    display_name: "&aНаблюдатель"
+    lore:
+      - ""
+      - "&7Нужно наиграть: &b1 ч."
+      - "&7Ваш стаж: &b%servertitles_playtime%"
+      - ""
+      - "&7В чате: &fНик &a[Наблюдатель]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_time_observer%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[close]"
+      - "[player] servertitles select time_observer"
+    right_click_commands:
+      - "[close]"
+      - "[player] servertitles select time_observer"
+  time_regular_selected:
+    material: "LIME_STAINED_GLASS_PANE"
+    slot: 22
+    priority: 1
+    update: true
+    display_name: "&a✔ Постоялец"
+    lore:
+      - ""
+      - "&7Нужно наиграть: &b5 ч."
+      - "&7Ваш стаж: &b%servertitles_playtime%"
+      - ""
+      - "&7В чате: &fНик &2[Постоялец]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_time_regular%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    right_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    view_requirement:
+      requirements:
+        selected:
+          type: "string equals"
+          input: "%servertitles_selected_id%"
+          output: "time_regular"
+  time_regular:
+    material: "COMPASS"
+    slot: 22
+    priority: 2
+    update: true
+    display_name: "&2Постоялец"
+    lore:
+      - ""
+      - "&7Нужно наиграть: &b5 ч."
+      - "&7Ваш стаж: &b%servertitles_playtime%"
+      - ""
+      - "&7В чате: &fНик &2[Постоялец]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_time_regular%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[close]"
+      - "[player] servertitles select time_regular"
+    right_click_commands:
+      - "[close]"
+      - "[player] servertitles select time_regular"
+  time_oldtimer_selected:
+    material: "LIME_STAINED_GLASS_PANE"
+    slot: 31
+    priority: 1
+    update: true
+    display_name: "&a✔ Старожил"
+    lore:
+      - ""
+      - "&7Нужно наиграть: &b24 ч."
+      - "&7Ваш стаж: &b%servertitles_playtime%"
+      - ""
+      - "&7В чате: &fНик &b[Старожил]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_time_oldtimer%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    right_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    view_requirement:
+      requirements:
+        selected:
+          type: "string equals"
+          input: "%servertitles_selected_id%"
+          output: "time_oldtimer"
+  time_oldtimer:
+    material: "BOOK"
+    slot: 31
+    priority: 2
+    update: true
+    display_name: "&bСтарожил"
+    lore:
+      - ""
+      - "&7Нужно наиграть: &b24 ч."
+      - "&7Ваш стаж: &b%servertitles_playtime%"
+      - ""
+      - "&7В чате: &fНик &b[Старожил]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_time_oldtimer%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[close]"
+      - "[player] servertitles select time_oldtimer"
+    right_click_commands:
+      - "[close]"
+      - "[player] servertitles select time_oldtimer"
+  time_veteran_selected:
+    material: "LIME_STAINED_GLASS_PANE"
+    slot: 40
+    priority: 1
+    update: true
+    display_name: "&a✔ Ветеран"
+    lore:
+      - ""
+      - "&7Нужно наиграть: &b72 ч."
+      - "&7Ваш стаж: &b%servertitles_playtime%"
+      - ""
+      - "&7В чате: &fНик &9[Ветеран]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_time_veteran%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    right_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    view_requirement:
+      requirements:
+        selected:
+          type: "string equals"
+          input: "%servertitles_selected_id%"
+          output: "time_veteran"
+  time_veteran:
+    material: "AMETHYST_SHARD"
+    slot: 40
+    priority: 2
+    update: true
+    display_name: "&9Ветеран"
+    lore:
+      - ""
+      - "&7Нужно наиграть: &b72 ч."
+      - "&7Ваш стаж: &b%servertitles_playtime%"
+      - ""
+      - "&7В чате: &fНик &9[Ветеран]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_time_veteran%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[close]"
+      - "[player] servertitles select time_veteran"
+    right_click_commands:
+      - "[close]"
+      - "[player] servertitles select time_veteran"
+  time_legend_selected:
+    material: "LIME_STAINED_GLASS_PANE"
+    slot: 49
+    priority: 1
+    update: true
+    display_name: "&a✔ Легенда сервера"
+    lore:
+      - ""
+      - "&7Нужно наиграть: &b168 ч."
+      - "&7Ваш стаж: &b%servertitles_playtime%"
+      - ""
+      - "&7В чате: &fНик &d&l[Легенда сервера]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_time_legend%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    right_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    view_requirement:
+      requirements:
+        selected:
+          type: "string equals"
+          input: "%servertitles_selected_id%"
+          output: "time_legend"
+  time_legend:
+    material: "NETHER_STAR"
+    slot: 49
+    priority: 2
+    update: true
+    display_name: "&d&lЛегенда сервера"
+    lore:
+      - ""
+      - "&7Нужно наиграть: &b168 ч."
+      - "&7Ваш стаж: &b%servertitles_playtime%"
+      - ""
+      - "&7В чате: &fНик &d&l[Легенда сервера]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_time_legend%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[close]"
+      - "[player] servertitles select time_legend"
+    right_click_commands:
+      - "[close]"
+      - "[player] servertitles select time_legend"
+  kills_duelist_selected:
+    material: "LIME_STAINED_GLASS_PANE"
+    slot: 15
+    priority: 1
+    update: true
+    display_name: "&a✔ Дуэлянт"
+    lore:
+      - ""
+      - "&7Нужно убийств игроков: &c10"
+      - "&7Ваши убийства: &c%servertitles_kills%"
+      - ""
+      - "&7В чате: &fНик &e[Дуэлянт]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_kills_duelist%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    right_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    view_requirement:
+      requirements:
+        selected:
+          type: "string equals"
+          input: "%servertitles_selected_id%"
+          output: "kills_duelist"
+  kills_duelist:
+    material: "WOODEN_SWORD"
+    slot: 15
+    priority: 2
+    update: true
+    display_name: "&eДуэлянт"
+    lore:
+      - ""
+      - "&7Нужно убийств игроков: &c10"
+      - "&7Ваши убийства: &c%servertitles_kills%"
+      - ""
+      - "&7В чате: &fНик &e[Дуэлянт]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_kills_duelist%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[close]"
+      - "[player] servertitles select kills_duelist"
+    right_click_commands:
+      - "[close]"
+      - "[player] servertitles select kills_duelist"
+  kills_hunter_selected:
+    material: "LIME_STAINED_GLASS_PANE"
+    slot: 24
+    priority: 1
+    update: true
+    display_name: "&a✔ Охотник"
+    lore:
+      - ""
+      - "&7Нужно убийств игроков: &c50"
+      - "&7Ваши убийства: &c%servertitles_kills%"
+      - ""
+      - "&7В чате: &fНик &6[Охотник]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_kills_hunter%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    right_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    view_requirement:
+      requirements:
+        selected:
+          type: "string equals"
+          input: "%servertitles_selected_id%"
+          output: "kills_hunter"
+  kills_hunter:
+    material: "STONE_SWORD"
+    slot: 24
+    priority: 2
+    update: true
+    display_name: "&6Охотник"
+    lore:
+      - ""
+      - "&7Нужно убийств игроков: &c50"
+      - "&7Ваши убийства: &c%servertitles_kills%"
+      - ""
+      - "&7В чате: &fНик &6[Охотник]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_kills_hunter%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[close]"
+      - "[player] servertitles select kills_hunter"
+    right_click_commands:
+      - "[close]"
+      - "[player] servertitles select kills_hunter"
+  kills_gladiator_selected:
+    material: "LIME_STAINED_GLASS_PANE"
+    slot: 33
+    priority: 1
+    update: true
+    display_name: "&a✔ Гладиатор"
+    lore:
+      - ""
+      - "&7Нужно убийств игроков: &c100"
+      - "&7Ваши убийства: &c%servertitles_kills%"
+      - ""
+      - "&7В чате: &fНик &c[Гладиатор]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_kills_gladiator%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    right_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    view_requirement:
+      requirements:
+        selected:
+          type: "string equals"
+          input: "%servertitles_selected_id%"
+          output: "kills_gladiator"
+  kills_gladiator:
+    material: "IRON_SWORD"
+    slot: 33
+    priority: 2
+    update: true
+    display_name: "&cГладиатор"
+    lore:
+      - ""
+      - "&7Нужно убийств игроков: &c100"
+      - "&7Ваши убийства: &c%servertitles_kills%"
+      - ""
+      - "&7В чате: &fНик &c[Гладиатор]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_kills_gladiator%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[close]"
+      - "[player] servertitles select kills_gladiator"
+    right_click_commands:
+      - "[close]"
+      - "[player] servertitles select kills_gladiator"
+  kills_conqueror_selected:
+    material: "LIME_STAINED_GLASS_PANE"
+    slot: 42
+    priority: 1
+    update: true
+    display_name: "&a✔ Завоеватель"
+    lore:
+      - ""
+      - "&7Нужно убийств игроков: &c250"
+      - "&7Ваши убийства: &c%servertitles_kills%"
+      - ""
+      - "&7В чате: &fНик &4[Завоеватель]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_kills_conqueror%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    right_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    view_requirement:
+      requirements:
+        selected:
+          type: "string equals"
+          input: "%servertitles_selected_id%"
+          output: "kills_conqueror"
+  kills_conqueror:
+    material: "DIAMOND_SWORD"
+    slot: 42
+    priority: 2
+    update: true
+    display_name: "&4Завоеватель"
+    lore:
+      - ""
+      - "&7Нужно убийств игроков: &c250"
+      - "&7Ваши убийства: &c%servertitles_kills%"
+      - ""
+      - "&7В чате: &fНик &4[Завоеватель]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_kills_conqueror%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[close]"
+      - "[player] servertitles select kills_conqueror"
+    right_click_commands:
+      - "[close]"
+      - "[player] servertitles select kills_conqueror"
+  kills_executioner_selected:
+    material: "LIME_STAINED_GLASS_PANE"
+    slot: 51
+    priority: 1
+    update: true
+    display_name: "&a✔ Палач"
+    lore:
+      - ""
+      - "&7Нужно убийств игроков: &c500"
+      - "&7Ваши убийства: &c%servertitles_kills%"
+      - ""
+      - "&7В чате: &fНик &4&l[Палач]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_kills_executioner%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    right_click_commands:
+      - "[message] &aЭтот титул уже выбран."
+    view_requirement:
+      requirements:
+        selected:
+          type: "string equals"
+          input: "%servertitles_selected_id%"
+          output: "kills_executioner"
+  kills_executioner:
+    material: "NETHERITE_SWORD"
+    slot: 51
+    priority: 2
+    update: true
+    display_name: "&4&lПалач"
+    lore:
+      - ""
+      - "&7Нужно убийств игроков: &c500"
+      - "&7Ваши убийства: &c%servertitles_kills%"
+      - ""
+      - "&7В чате: &fНик &4&l[Палач]&r"
+      - "&7Открытый титул остаётся навсегда."
+      - ""
+      - "%servertitles_status_kills_executioner%"
+    item_flags:
+      - "HIDE_ATTRIBUTES"
+    left_click_commands:
+      - "[close]"
+      - "[player] servertitles select kills_executioner"
+    right_click_commands:
+      - "[close]"
+      - "[player] servertitles select kills_executioner"
+  clear:
+    material: "MILK_BUCKET"
+    slot: 45
+    display_name: "&cСнять титул"
+    lore:
+      - "&7Снимает выбранный титул."
+      - "&7Вернёт ваш обычный суффикс."
+      - "&7Полученные титулы сохраняются."
+    left_click_commands:
+      - "[close]"
+      - "[player] servertitles clear"
+  profile:
+    material: "NAME_TAG"
+    slot: 48
+    display_name: "&eВаши достижения"
+    update: true
+    lore:
+      - "&7Выбран: %servertitles_selected%"
+      - "&7Стаж: &b%servertitles_playtime%"
+      - "&7Убийств игроков: &c%servertitles_kills%"
+      - "&7Монеты: &e%vault_eco_balance_formatted%"
+  help:
+    material: "BOOK"
+    slot: 50
+    display_name: "&6Как работают титулы"
+    lore:
+      - "&7После ника показан только выбранный титул."
+      - "&7Снять титул — вернуть обычный суффикс."
+      - "&7Полученные титулы меняются бесплатно."
+      - "&7Время и убийства не списываются."
+      - "&7Команды: &f/title &7или &f/titles"
+  close:
+    material: "BARRIER"
+    slot: 53
+    display_name: "&cЗакрыть"
+    left_click_commands:
+      - "[close]"
+  filler:
+    material: "GRAY_STAINED_GLASS_PANE"
+    slots:
+      - 0
+      - 1
+      - 3
+      - 5
+      - 7
+      - 8
+      - 9
+      - 10
+      - 12
+      - 14
+      - 16
+      - 17
+      - 18
+      - 19
+      - 21
+      - 23
+      - 25
+      - 26
+      - 27
+      - 28
+      - 30
+      - 32
+      - 34
+      - 35
+      - 36
+      - 37
+      - 39
+      - 41
+      - 43
+      - 44
+      - 46
+      - 52
+    display_name: " "

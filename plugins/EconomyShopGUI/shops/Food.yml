@@ -1,0 +1,64 @@
+pages:
+  page1:
+    gui-rows: 6
+    items:
+      '1':
+        material: BREAD
+        displayname: "&fХлеб"
+        slot: 10
+        buy: 160
+        sell: 30
+      '2':
+        material: COOKED_BEEF
+        displayname: "&fСтейк"
+        slot: 11
+        buy: 100
+        sell: 8
+      '3':
+        material: COOKED_PORKCHOP
+        displayname: "&fЖареная свинина"
+        slot: 12
+        buy: 100
+        sell: 7
+      '4':
+        material: COOKED_CHICKEN
+        displayname: "&fЖареная курятина"
+        slot: 13
+        buy: 80
+        sell: 6
+      '5':
+        material: BAKED_POTATO
+        displayname: "&fПечёный картофель"
+        slot: 14
+        buy: 60
+        sell: 6
+      '6':
+        material: APPLE
+        displayname: "&fЯблоко"
+        slot: 15
+        buy: 80
+        sell: 10
+      '7':
+        material: GOLDEN_APPLE
+        displayname: "&fЗолотое яблоко"
+        slot: 16
+        buy: 2400
+        sell: 100
+      '8':
+        material: COOKED_COD
+        displayname: "&fЖареная треска"
+        slot: 19
+        buy: 80
+        sell: 7
+      '9':
+        material: COOKED_SALMON
+        displayname: "&fЖареный лосось"
+        slot: 20
+        buy: 100
+        sell: 8
+      '10':
+        material: PUMPKIN_PIE
+        displayname: "&fТыквенный пирог"
+        slot: 21
+        buy: 280
+        sell: 20

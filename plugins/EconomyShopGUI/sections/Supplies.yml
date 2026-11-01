@@ -1,0 +1,19 @@
+enable: true
+slot: 33
+title: "&8Магазин · Полезные вещи"
+hidden: false
+sub-section: false
+economy: VAULT
+fill-item:
+  material: GRAY_STAINED_GLASS_PANE
+  name: ' '
+nav-bar:
+  mode: INHERIT
+item:
+  material: IRON_PICKAXE
+  name: "&d&lПолезные вещи"
+  lore:
+    - "&7Товаров: &f16"
+    - '&aЛКМ по товару — купить'
+    - '&6ПКМ по товару — продать'
+    - '&7Нажмите, чтобы открыть'

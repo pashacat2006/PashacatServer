@@ -1,0 +1,64 @@
+pages:
+  page1:
+    gui-rows: 6
+    items:
+      '1':
+        material: ROTTEN_FLESH
+        displayname: "&fГнилая плоть"
+        slot: 10
+        buy: 16
+        sell: 1
+      '2':
+        material: BONE
+        displayname: "&fКость"
+        slot: 11
+        buy: 40
+        sell: 2
+      '3':
+        material: STRING
+        displayname: "&fНить"
+        slot: 12
+        buy: 40
+        sell: 5
+      '4':
+        material: SPIDER_EYE
+        displayname: "&fПаучий глаз"
+        slot: 13
+        buy: 60
+        sell: 4
+      '5':
+        material: GUNPOWDER
+        displayname: "&fПорох"
+        slot: 14
+        buy: 150
+        sell: 20
+      '6':
+        material: LEATHER
+        displayname: "&fКожа"
+        slot: 15
+        buy: 80
+        sell: 10
+      '7':
+        material: FEATHER
+        displayname: "&fПеро"
+        slot: 16
+        buy: 30
+        sell: 3
+      '8':
+        material: SLIME_BALL
+        displayname: "&fСгусток слизи"
+        slot: 19
+        buy: 240
+        sell: 40
+      '9':
+        material: ENDER_PEARL
+        displayname: "&fЭндер-жемчуг"
+        slot: 20
+        buy: 1000
+        sell: 40
+      '10':
+        material: BLAZE_ROD
+        displayname: "&fОгненный стержень"
+        slot: 21
+        buy: 500
+        sell: 25

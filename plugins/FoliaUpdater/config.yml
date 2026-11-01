@@ -10,3 +10,8 @@ multithread-folder: multithread
 # RealMines берёт экономику из Vault один раз при включении, поэтому Essentials должен включиться раньше.
 load-after:
   RealMines: [Essentials]
+
+  EconomyShopGUI: [Vault, Essentials, PlayerPoints, WorldGuard, PlaceholderAPI]
+  CrazyAuctions: [Vault, Essentials]
+  FancyNpcs: [PlaceholderAPI, SkinsRestorer]
+  ServerTitles: [Vault, LuckPerms, PlaceholderAPI, DeluxeMenus]

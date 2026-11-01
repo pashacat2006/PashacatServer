@@ -1,0 +1,97 @@
+npcs:
+  de97327e-6073-4cfb-91b4-2183bfb21b50:
+    name: Auction
+    creator: 80bfd5f6-a0f6-3e98-8e87-1ad334bb24f0
+    displayName: '&aАукцион'
+    type: PLAYER
+    location:
+      world: world
+      x: -96.35275078619426
+      y: 57.0
+      z: 48.69999998807907
+      yaw: -0.7553406
+      pitch: -2.771616E-5
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      mirrorSkin: false
+      identifier: Its_Starax
+      variant: AUTO
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: ah
+  d078311e-f6c5-4294-a15f-6f3e3764a697:
+    name: SellShop
+    creator: 80bfd5f6-a0f6-3e98-8e87-1ad334bb24f0
+    displayName: '&cПродать вещи'
+    type: PLAYER
+    location:
+      world: world
+      x: -102.43589402923601
+      y: 57.0
+      z: 48.69999998807907
+      yaw: 5.3933105
+      pitch: 1.949993
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      identifier: ItsStatic_
+      variant: AUTO
+      mirrorSkin: false
+    actions:
+      RIGHT_CLICK:
+        '1':
+          action: player_command
+          value: sellgui
+  6d911fd0-3418-4ef0-a1f3-9f86458d1488:
+    name: Shop
+    creator: 80bfd5f6-a0f6-3e98-8e87-1ad334bb24f0
+    displayName: '&eМагазин'
+    type: PLAYER
+    location:
+      world: world
+      x: -99.70056105921883
+      y: 57.0
+      z: 48.69999998807907
+      yaw: 0.14324951
+      pitch: -3.7500117
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      identifier: EgrifYTman
+      variant: AUTO
+      mirrorSkin: false
+    actions:
+      RIGHT_CLICK:
+        '1':
+          action: player_command
+          value: shop
